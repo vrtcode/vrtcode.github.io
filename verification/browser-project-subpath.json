@@ -1,13 +1,13 @@
 {
   "engine": "Chromium",
-  "checks": 72,
+  "checks": 80,
   "allPassed": true,
   "externalResourceRequests": 0,
   "reducedMotion": "PASS",
   "pointerAttraction": "PASS",
   "pointerReturn": "PASS",
-  "pointerMovementPx": 18.792,
-  "pointerAfterReleasePx": -0.679,
+  "pointerMovementPx": 18.86,
+  "pointerAfterReleasePx": -0.397,
   "menu": "PASS",
   "results": [
     {
@@ -69,6 +69,13 @@
     {
       "javascript": true,
       "width": 360,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -132,6 +139,13 @@
     {
       "javascript": true,
       "width": 390,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -195,6 +209,13 @@
     {
       "javascript": true,
       "width": 768,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -258,6 +279,13 @@
     {
       "javascript": true,
       "width": 1440,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -321,6 +349,13 @@
     {
       "javascript": false,
       "width": 360,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -384,6 +419,13 @@
     {
       "javascript": false,
       "width": 390,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -447,6 +489,13 @@
     {
       "javascript": false,
       "width": 768,
+      "route": "/work/fenrir-tetris/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
       "route": "/not-a-real-page/",
       "status": 404,
       "result": "PASS"
@@ -504,6 +553,13 @@
       "javascript": false,
       "width": 1440,
       "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/fenrir-tetris/",
       "status": 200,
       "result": "PASS"
     },

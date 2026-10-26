@@ -15,7 +15,7 @@
 <div style="min-width:0">
 <p style="margin:0 0 28px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.04em;color:#A8B8C8;display:flex;align-items:center;gap:10px"><span aria-hidden="true" style="width:8px;height:8px;background:#B5E07A;border-radius:1px"></span>CODE. TRACES. NO GUESSWORK.</p>
 <h1 id="hero-h" style="margin:0;font-size:clamp(38px,6.2vw,82px);line-height:1.03;font-weight:600;letter-spacing:-.035em;text-wrap:balance">Figure out what's <span style="color:#66D9EF">really going on.</span></h1>
-<p style="margin:32px 0 0;max-width:34em;font-size:18px;line-height:1.65;color:#A8B8C8;text-wrap:pretty">I'm vrt. I dig into mobile apps, native code, and backends to figure out what's actually happening. Weird behavior? I follow the traces, test the hunch, and keep the receipts.</p>
+<p style="margin:32px 0 0;max-width:34em;font-size:18px;line-height:1.65;color:#A8B8C8;text-wrap:pretty">I'm vrt — an ethical hacker with 18+ years of finding bugs in websites, web services, mobile apps, and the stuff in between. I dig through the code, follow the traces, and keep the receipts.</p>
 <p style="margin:16px 0 0;max-width:34em;font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.6;color:#EDF3F8">Under the hood, across the wire, and all the way to a fix you can check.</p>
 <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px">
 <a href="#work" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;background:#66D9EF;color:#080C12;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;transition:background .18s" style-hover="background:#EDF3F8;color:#080C12">See what I dig into <span aria-hidden="true">→</span></a>
@@ -53,7 +53,7 @@
 <h2 id="about-h" style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em;text-wrap:balance">The docs say one thing. The code says, 'nah.'</h2>
 </div>
 <div style="grid-column:span 2;min-width:min(100%,300px);max-width:68ch;display:flex;flex-direction:column;gap:20px;font-size:18px;line-height:1.7;color:#EDF3F8;text-wrap:pretty">
-<p style="margin:0">That's the stuff I like digging into: Android and iOS integrations, native code, network protocols, and backend logic that doesn't quite match the story. I chase the cause, put the theory on trial, and turn what holds up into a repeatable check or a focused fix.</p>
+<p style="margin:0">I've spent 18+ years hunting vulnerabilities in websites, web services, mobile apps, APIs, and the plumbing behind them. As an ethical hacker, I work on systems I own or have permission to test. I chase the cause, put the theory on trial, and turn what holds up into a repeatable check or a focused fix.</p>
 <p style="margin:0;color:#A8B8C8">I also work on the less flashy bits that keep systems from falling over: queues, worker shutdowns, access checks, logs, and safe rollouts. A green build isn't a victory lap. Neither is one passing test. I keep 'we checked this' separate from 'that's our best guess.'</p>
 </div>
 </div>
@@ -82,7 +82,7 @@
 <p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">03 / The work</p>
 <h2 id="work-h" style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">A few trips down the rabbit hole</h2>
 </div>
-<p style="margin:0;max-width:44ch;font-size:15px;color:#A8B8C8;text-wrap:pretty">Real work, with the private bits stripped out. The code stays private; names, identifiers, and infrastructure details don't make the cut.</p>
+<p style="margin:0;max-width:44ch;font-size:15px;color:#A8B8C8;text-wrap:pretty">Real work, with the private bits stripped out. Most code stays private; the Fenrir case links to my public contribution. Raw traces, identifiers, and infrastructure details don't make the cut.</p>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:20px">
 <sc-for list="{{ cases }}" as="c" hint-placeholder-count="6">
@@ -194,7 +194,10 @@
 
 <aside aria-label="Case details" style="grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:#29394A;border:1px solid #29394A;border-radius:12px;overflow:hidden">
 <div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">What's involved</div><div style="font-size:15px">{{ cs.topicsText }}</div></div>
-<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">Behind the scenes</div><div style="font-size:15px">{{ cs.source }}; code and raw reports stay private</div></div>
+<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">Behind the scenes</div><div style="font-size:15px">{{ cs.source }}; {{ cs.sourceNote }}
+<sc-for list="{{ cs.publicLinks }}" as="publicLink">
+<a href="{{ publicLink.href }}" target="_blank" rel="noopener noreferrer" style="display:block;margin-top:8px;font-size:14px;color:#66D9EF;text-decoration:none" style-hover="color:#EDF3F8">{{ publicLink.label }} <span aria-hidden="true">↗</span><span class="sr-only"> (opens a new tab)</span></a>
+</sc-for></div></div>
 <div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">The sandbox</div><div style="font-size:15px">My own systems, or explicit permission</div></div>
 </aside>
 

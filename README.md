@@ -8,7 +8,7 @@ The intended initial Pages address is `https://vrtcode.github.io/`; repository c
 ## What is included
 
 - The supplied graphite/cyan/lime design, original layout, case-study diagrams, and optional network background.
-- Nine real HTML pages: home, seven case studies, and a not-found page.
+- Ten real HTML pages: home, eight case studies, and a not-found page.
 - Local IBM Plex fonts, favicon, 1200 × 630 social preview, per-page metadata, and an origin-aware sitemap.
 - A Python standard-library build. No Node, npm, React, API keys, package installation, or network access is needed to build or serve the website.
 - Optional progressive enhancement for the mobile menu and background. Content and navigation work without JavaScript.
@@ -112,7 +112,7 @@ python3 build.py
 python3 -m unittest discover -s tests -v
 ```
 
-The suite checks static content, English document language, seven real case pages, local links/anchors, unique IDs, absence of browser templates/CDN dependencies, assets, editorial corrections, preview safety, valid production URLs, and GitHub project subpaths.
+The suite checks static content, English document language, eight real case pages, local links/anchors, unique IDs, absence of browser templates/CDN dependencies, assets, editorial corrections, preview safety, valid production URLs, and GitHub project subpaths.
 
 An optional browser suite is provided in `tests/browser.cjs`. It requires a separately available Playwright package and Chromium; these are **QA-only**, not build or website dependencies. Run it in an environment where `require('playwright')` resolves:
 
@@ -144,6 +144,14 @@ HTML carries a restrictive Content Security Policy and referrer policy. Scripts 
 `dist/_headers` is a portability aid for hosts that support it. **GitHub Pages does not apply `_headers` files or provide arbitrary custom response headers.** Do not claim that X-Frame-Options, frame-ancestors, or MIME-sniffing protection from that file are enforced on Pages. The HTML CSP deliberately omits header-only `frame-ancestors` to avoid a false claim.
 
 Never add secrets, original traces, device identifiers, private reports, or unapproved vulnerability disclosures. GitHub Actions dependencies are pinned to the official action commit SHAs verified during preparation; review updates before changing pins.
+
+## Profile and public contribution
+
+The owner describes 18+ years of cybersecurity and vulnerability research across websites, web services, mobile apps, APIs and related systems. The public role wording is **ethical hacker**, not “white-hat.” This biography is owner-supplied, not a separate employment-history verification.
+
+Case 08 describes the owner's [Fenrir PR #29](https://github.com/R0rt1z2/fenrir/pull/29), not authorship of the whole upstream project. The PR head was inspected at `9f7f9c9257a4d05f38c698e7c838d515de170f82`; it was closed without merge at review time. Links target the actual PR and contribution branch, not only the fork's unrelated default branch. See `verification/profile-update.json` for source provenance.
+
+Cases can provide `sourceNote` and a `publicLinks` array. Private cases keep an empty link array; a public case must not inherit an “all code is private” statement. Both cards and previous/next navigation include the eighth case, and the displayed total is generated from the data.
 
 ## Fonts and design provenance
 

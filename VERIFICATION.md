@@ -30,7 +30,7 @@ python3 build.py
 python3 -m unittest discover -s tests -v
 ```
 
-Result: **17 tests passed**, exit code 0. Before implementation, the original export failed the static acceptance suite with 25 assertions across nine tests. Build-mode tests were introduced separately and first failed before their implementation.
+Result: **20 tests passed**, exit code 0. Before implementation, the original export failed the static acceptance suite with 25 assertions across nine tests. Build-mode tests were introduced separately and first failed before their implementation.
 
 The suite checks real case pages, resolved templates, local resources, English language, unique IDs, local links/anchors, publication assets, metadata, explicit copy corrections, safe preview behavior, production origins, and Pages subpaths. Invalid or missing production origins fail closed.
 
@@ -54,7 +54,7 @@ Engine: installed Google Chrome via Playwright. QA software is separate from the
 BROWSER_EXECUTABLE=/path/to/chrome node tests/browser.cjs
 ```
 
-Root-site result: **72 page/viewport/JavaScript combinations passed**, exit code 0. Matrix: home, seven case pages and a missing URL; viewport widths 360, 390, 768 and 1440; JavaScript on and off.
+Root-site result: **80 page/viewport/JavaScript combinations passed**, exit code 0. Matrix: home, eight case pages and a missing URL; viewport widths 360, 390, 768 and 1440; JavaScript on and off.
 
 Observed:
 
@@ -68,7 +68,7 @@ Observed:
 
 The attraction test was first observed red on the migrated code (1.123 px of incidental drift), then passed after restoring the original physics. The same regression assertions remain in `tests/browser.cjs`.
 
-The same full browser suite also passed **72 combinations** against the production-mode `/portfolio` project-subpath build (144 route/viewport/JavaScript combinations across the two builds). This closes local browser coverage of prefixed assets, menu links and direct routes; it does not prove a public Pages deployment.
+The same full browser suite also passed **80 combinations** against the production-mode `/portfolio` project-subpath build (160 route/viewport/JavaScript combinations across the two builds). This closes local browser coverage of prefixed assets, menu links and direct routes; it does not prove a public Pages deployment.
 
 Receipts: `verification/browser.json`, `verification/browser-project-subpath.json` and `verification/background-code-parity.json`.
 
@@ -79,7 +79,7 @@ Mobile navigation audits on the final production-mode local build:
 | Page | Accessibility | Best practices | SEO |
 |---|---:|---:|---:|
 | Home | 100 | 100 | 92 |
-| Android integrity case | 100 | 100 | 92 |
+| Fenrir contribution case | 100 | 100 | 92 |
 
 The only failed audit is Lighthouse's robots.txt download. The page-context download is blocked by the deliberate `connect-src 'none'` policy. Independent HTTP retrieval returned 200, `text/plain`, and the expected production robots/sitemap content. The policy was not weakened to improve a score. This local audit does not establish public crawler behavior.
 
@@ -89,7 +89,13 @@ This Lighthouse tool excludes performance. No performance score, real-device aud
 
 The copy rewrite began with three red copy tests, then passed after implementation. A follow-up Lighthouse run found that “Dig into it” was missing from the expanded accessible case-link names. A specific regression test was added red, the names were corrected, and the same test passed. The final Lighthouse runs show no label/name mismatch; the only remaining failed audit is the documented robots.txt gathering issue.
 
-Current checks: 17 unit/static tests; 72 root-site and 72 project-subpath browser combinations; 48 additional page/viewport checks across 360, 390, 768, 860, 1024 and 1440 px, with no page overflow or SVG text outside its viewBox. CSS, fonts, header styles and background drawing behavior were not changed by the copy rewrite.
+Current checks after the eighth-case extension: 20 unit/static tests; 80 root-site and 80 project-subpath browser combinations; 54 additional page/viewport checks across 360, 390, 768, 860, 1024 and 1440 px, with no page overflow or SVG text outside its viewBox. CSS, fonts, header styles and background drawing behavior were not changed by the copy rewrite.
+
+## Eighth-case and biography checks
+
+Three new regression tests were first red and then passed: 18+ years plus ethical-hacker wording; case 08 linked to the actual Fenrir PR and branch with accurate credit/status; and the eighth route, displayed `08 of 08` count, private/public source text, and cyclic navigation.
+
+Fenrir source review was read-only. The actual PR diff, not only the default branch or README, supports the descriptions of the image-hash gate, firmware-specific profile and patch guards. No Fenrir build, flash script, device mutation, firmware rollout, or new attestation test was performed for the portfolio. The saved 24-build firmware-analysis report was re-read; it is not a fresh device or server measurement.
 
 ## GitHub and publication boundary
 

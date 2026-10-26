@@ -11,7 +11,7 @@ const out = path.resolve(process.env.VRT_REPORT_DIR || path.join(root,'test-resu
 const port = process.env.VRT_TEST_PORT || '8768';
 const origin = `http://127.0.0.1:${port}`;
 const base = origin + manifest.base_path;
-const slugs = ['android-integrity','realtime-security','worker-lifecycle','mobile-sdk-analysis','push-integration-security','network-observability','ios-attestation'];
+const slugs = ['android-integrity','realtime-security','worker-lifecycle','mobile-sdk-analysis','push-integration-security','network-observability','ios-attestation','fenrir-tetris'];
 const routes = ['/',...slugs.map(s=>`/work/${s}/`),'/not-a-real-page/'];
 const results = [];
 const server = spawn(process.env.PYTHON || 'python3',[path.join(root,'serve.py'),'--directory',directory,'--port',port],{stdio:'ignore'});
@@ -65,6 +65,7 @@ let browser;
         if(javascript&&(width===1440||width===390))await page.screenshot({path:path.join(out,`home-${width}.png`)});
       }
       if(route==='/work/android-integrity/'&&javascript&&width===1440)await page.screenshot({path:path.join(out,'case-1440.png')});
+      if(route==='/work/fenrir-tetris/'&&javascript&&width===1440)await page.screenshot({path:path.join(out,'fenrir-1440.png')});
       results.push({javascript,width,route,status:response.status(),result:'PASS'});
     }
     assert.deepEqual(errors,[]);assert.deepEqual(external,[]);

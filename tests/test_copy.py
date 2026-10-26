@@ -13,7 +13,7 @@ class CopyTests(unittest.TestCase):
         self.assertIn('No hype. Just receipts.', home)
         self.assertNotIn('The personal portfolio of vrt:', home)
 
-    def test_case_copy_is_rewritten_without_changing_routes(self):
+    def test_case_copy_and_routes(self):
         content = json.loads((ROOT / 'src/content.json').read_text())
         expected = {
             'android-integrity': 'Android integrity: under the hood',
@@ -23,6 +23,7 @@ class CopyTests(unittest.TestCase):
             'push-integration-security': "Push pipelines: queued isn't delivered",
             'network-observability': 'Network debugging: one layer at a time',
             'ios-attestation': 'iOS attestation: claims vs. receipts',
+            'fenrir-tetris': 'Fenrir: a safer Tetris port',
         }
         self.assertEqual({c['slug']: c['title'] for c in content['cases']}, expected)
         for case in content['cases']:

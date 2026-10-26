@@ -14,6 +14,12 @@ After the migration baseline, the owner requested conversational technical Engli
 
 The exact-text and computed-style receipts below describe the original migration baseline, not a promise that rewritten text has identical line wraps. The source comparison now applies the explicit copy journal before checking the body; it still rejects unlisted markup/style changes. Current browser receipts cover the rewritten copy.
 
+## Eighth case and owner biography
+
+A later owner request adds 18+ years of experience, the role “ethical hacker,” and case 08 about the owner's actual Fenrir contribution. This is an intentional extension to the seven-case supplied design, not a missing original block. The existing seven cases keep their SVG geometry and visual code. Two new diagrams use the same palette, typography, line/box style and card/page sizes.
+
+The code comparison applies the explicit body changes recorded in `verification/profile-update.json`: biography text, public/private work wording, and an optional public-source link loop. Global CSS, header declarations, local font resources and background behavior remain unchanged. The original migration and pre-extension visual receipts below are historical baselines; current browser receipts cover all eight cases.
+
 ## Code conservation
 
 | Original source | Static implementation | Result |

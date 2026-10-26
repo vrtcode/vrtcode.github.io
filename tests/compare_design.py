@@ -55,8 +55,12 @@ def rewrite_text(match):
  if clean not in copy:return raw
  return raw[:len(raw)-len(raw.lstrip())]+html.escape(copy[clean],quote=False)+raw[len(raw.rstrip()):]
 body=re.sub(r'(?<=>)[^<>]+(?=<)',rewrite_text,body)
+profile=json.loads((ROOT/'verification/profile-update.json').read_text())
+for edit in profile['bodyChanges']:
+ assert body.count(edit['old'])==1, 'Expected pre-profile template fragment was not found'
+ body=body.replace(edit['old'],edit['new'])
 assert body.strip()+'\n'==(ROOT/'src/body.html').read_text(), 'Unlisted body-template or markup/style difference'
 assert re.search(r'<style>([\s\S]*?)</style>',s)[1].strip()+'\n'==(ROOT/'src/base.css').read_text(), 'Original global CSS changed'
-print(json.dumps({'globalCss':'EXACT','bodyTemplate':'EXACT markup/styles after explicit migration and conversational-copy changes',
+print(json.dumps({'globalCss':'EXACT','bodyTemplate':'EXACT after listed migration, copy and profile/public-link additions',
  'headerElements':len(report),'headerDeclarations':sum(r['declarations_checked'] for r in report),
  'headerHover':'MATCH','originalShadowDeclarations':len(re.findall(r'(?:box|text)-shadow\s*:',s))},indent=2))

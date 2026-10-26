@@ -14,7 +14,7 @@ MANIFEST = SITE / 'build-manifest.json'
 BASE = json.loads(MANIFEST.read_text()).get('base_path', '') if MANIFEST.is_file() else ''
 SLUGS = ['android-integrity', 'realtime-security', 'worker-lifecycle',
          'mobile-sdk-analysis', 'push-integration-security',
-         'network-observability', 'ios-attestation']
+         'network-observability', 'ios-attestation', 'fenrir-tetris']
 
 
 class Document(HTMLParser):
@@ -61,7 +61,7 @@ class StaticSiteTests(unittest.TestCase):
                         self.assertNotIn('fonts.googleapis.com', attrs[key])
                         self.assertNotIn('unpkg.com', attrs[key])
 
-    def test_seven_real_case_pages(self):
+    def test_eight_real_case_pages(self):
         for slug in SLUGS:
             with self.subTest(slug=slug):
                 path = SITE / 'work' / slug / 'index.html'

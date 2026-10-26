@@ -156,7 +156,9 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
     },
     {
       "slug": "realtime-security",
@@ -221,7 +223,9 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
     },
     {
       "slug": "worker-lifecycle",
@@ -280,7 +284,9 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
     },
     {
       "slug": "mobile-sdk-analysis",
@@ -345,7 +351,9 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
     },
     {
       "slug": "push-integration-security",
@@ -410,7 +418,9 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
     },
     {
       "slug": "network-observability",
@@ -473,7 +483,9 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
     },
     {
       "slug": "ios-attestation",
@@ -527,7 +539,85 @@
           "glyph": "⊘",
           "color": "#A8B8C8"
         }
-      ]
+      ],
+      "sourceNote": "code and raw reports stay private",
+      "publicLinks": []
+    },
+    {
+      "slug": "fenrir-tetris",
+      "title": "Fenrir: a safer Tetris port",
+      "summary": "I built a firmware-specific CMF Phone 1 profile and added fail-closed checks to Fenrir's patching path. Exact image, exact partition, exact patch site — no 'close enough.'",
+      "topics": [
+        "MediaTek",
+        "Boot chain",
+        "Firmware RE",
+        "Fail-closed patching"
+      ],
+      "nodes": [
+        {
+          "label": "firmware image",
+          "arrow": true
+        },
+        {
+          "label": "input guards",
+          "arrow": true
+        },
+        {
+          "label": "scoped patch",
+          "arrow": true
+        },
+        {
+          "label": "stop on drift",
+          "arrow": false
+        }
+      ],
+      "source": "Public contribution",
+      "context": "A broad pattern match is a rough place to put your trust when firmware changes between OTA builds. I dug into Fenrir on CMF Phone 1/Tetris and built a separate firmware-specific profile instead of quietly changing the generic Tetris path. The original Fenrir project is by R0rt1z2; this case is about my port and patch-safety work.",
+      "approach": "I added Tetris240910 for the 240910 firmware, tied it to an exact input SHA-256, and constrained patches by partition, expected match count, selected offset, and equal replacement length. I also wired those guard options through JSON-configured patch stages. A mismatch should stop the run, not pick a nearby match and hope for the best.",
+      "focus": "Make firmware drift loud and keep a port tied to the image it was built for. Alongside the port, I compared 24 Tetris firmware builds to track changes in preloader policy. That's static firmware analysis, not a compatibility stamp for every nearby version. The public PR documents the profile and device checks; this page doesn't turn screenshots or boot properties into an independently verified server-side verdict.",
+      "disclosureNote": "My contribution is PR #29 against R0rt1z2's Fenrir. At review time it was closed without merge, so I'm not presenting it as accepted upstream. The fork and PR are public; raw device artifacts stay private. This is a firmware-specific research contribution, not a universal port or an independently verified official attestation claim.",
+      "num": "08",
+      "href": "/work/fenrir-tetris/",
+      "diagramLabel": "The short version: exact image, guard checks, scoped patches on a match, stop on drift",
+      "linkLabel": "Dig into it: Fenrir: a safer Tetris port",
+      "evidenceList": [
+        {
+          "text": "The PR adds an input-image hash gate and a separate Tetris240910 profile with partition-scoped patch sites.",
+          "label": "In the code",
+          "glyph": "■",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Patch guards check match counts, selected offsets, replacement length, missing partitions, and missing patterns; JSON-configured stages receive the options too.",
+          "label": "In the code",
+          "glyph": "■",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Firmware-specific means firmware-specific. The PR is closed without merge, and neither the port nor a screenshot is an independent official attestation receipt.",
+          "label": "The catch",
+          "glyph": "⊘",
+          "color": "#A8B8C8"
+        }
+      ],
+      "sourceNote": "my PR against R0rt1z2's Fenrir; local artifacts stay private",
+      "publicLinks": [
+        {
+          "label": "Read my pull request #29",
+          "href": "https://github.com/R0rt1z2/fenrir/pull/29"
+        },
+        {
+          "label": "Browse my PR branch",
+          "href": "https://github.com/vrtcode/fenrir/tree/codex/tetris-safe-profiles"
+        }
+      ],
+      "topicsText": "MediaTek · Boot chain · Firmware RE · Fail-closed patching",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 206\" role=\"img\" aria-labelledby=\"dg-fenrir-tetris-card-t dg-fenrir-tetris-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-fenrir-tetris-card-t\">Exact image, scoped patches, no guessing</title><desc id=\"dg-fenrir-tetris-card-d\">The Tetris240910 profile checks an exact LK image and patch guards. Matching input proceeds to scoped patches; drift or mismatch stops the run. This diagram describes patch safety, not a server attestation result.</desc><defs><marker id=\"dg-fenrir-tetris-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\" /></marker></defs><text x=\"150\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">Tetris240910 profile</text><g><rect x=\"80\" y=\"26\" width=\"140\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"150.0\" y=\"39.0\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">exact LK image</text><line x1=\"150\" y1=\"52\" x2=\"150\" y2=\"64\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-card-ah)\" /><g><rect x=\"60\" y=\"66\" width=\"180\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#B5E07A\" /></g><text x=\"150.0\" y=\"80.0\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">SHA-256 + patch guards</text><line x1=\"150\" y1=\"94\" x2=\"70\" y2=\"114\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-card-ah)\" /><line x1=\"150\" y1=\"94\" x2=\"230\" y2=\"114\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-card-ah)\" /><g><rect x=\"4\" y=\"116\" width=\"132\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"70.0\" y=\"129.0\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">checks pass</text><g><rect x=\"164\" y=\"116\" width=\"132\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"230.0\" y=\"129.0\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">drift found</text><line x1=\"70\" y1=\"142\" x2=\"70\" y2=\"156\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-card-ah)\" /><line x1=\"230\" y1=\"142\" x2=\"230\" y2=\"156\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-card-ah)\" /><g><rect x=\"4\" y=\"158\" width=\"132\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"70.0\" y=\"172.0\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">apply scoped patches</text><g><rect x=\"164\" y=\"158\" width=\"132\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"230.0\" y=\"172.0\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">stop, don't guess</text><text x=\"150\" y=\"198\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">a profile, not a universal port</text></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 206\" role=\"img\" aria-labelledby=\"dg-fenrir-tetris-page-t dg-fenrir-tetris-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-fenrir-tetris-page-t\">Exact image, scoped patches, no guessing</title><desc id=\"dg-fenrir-tetris-page-d\">The Tetris240910 profile checks an exact LK image and patch guards. Matching input proceeds to scoped patches; drift or mismatch stops the run. This diagram describes patch safety, not a server attestation result.</desc><defs><marker id=\"dg-fenrir-tetris-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\" /></marker></defs><text x=\"150\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">Tetris240910 profile</text><g><rect x=\"80\" y=\"26\" width=\"140\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"150.0\" y=\"39.0\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">exact LK image</text><line x1=\"150\" y1=\"52\" x2=\"150\" y2=\"64\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-page-ah)\" /><g><rect x=\"60\" y=\"66\" width=\"180\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#B5E07A\" /></g><text x=\"150.0\" y=\"80.0\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">SHA-256 + patch guards</text><line x1=\"150\" y1=\"94\" x2=\"70\" y2=\"114\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-page-ah)\" /><line x1=\"150\" y1=\"94\" x2=\"230\" y2=\"114\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-page-ah)\" /><g><rect x=\"4\" y=\"116\" width=\"132\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"70.0\" y=\"129.0\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">checks pass</text><g><rect x=\"164\" y=\"116\" width=\"132\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"230.0\" y=\"129.0\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">drift found</text><line x1=\"70\" y1=\"142\" x2=\"70\" y2=\"156\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-page-ah)\" /><line x1=\"230\" y1=\"142\" x2=\"230\" y2=\"156\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-fenrir-tetris-page-ah)\" /><g><rect x=\"4\" y=\"158\" width=\"132\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"70.0\" y=\"172.0\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">apply scoped patches</text><g><rect x=\"164\" y=\"158\" width=\"132\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\" /></g><text x=\"230.0\" y=\"172.0\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">stop, don't guess</text><text x=\"150\" y=\"198\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">a profile, not a universal port</text></svg>"
+      }
     }
   ],
   "steps": [

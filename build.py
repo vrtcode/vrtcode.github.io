@@ -195,7 +195,7 @@ def build(output, site_url=None, production=False, base_path=''):
     for route, file, view, index in pages:
         ctx = dict(data, isHome=view == 'home', isCase=view == 'case', is404=view == '404', caseCount=f'{len(cases):02d}')
         title = 'vrt — Under the hood. No guesswork.'
-        description = 'Mobile apps, native code, backend rabbit holes. I’m vrt — I follow the traces, test the hunch, and keep the receipts.'
+        description = 'I’m vrt — an ethical hacker with 18+ years of finding bugs in websites, web services, mobile apps, and the stuff under the hood.'
         if index is not None:
             ctx.update(cs=cases[index], prev=cases[(index-1) % len(cases)], next=cases[(index+1) % len(cases)])
             title, description = cases[index]['title'] + ' — vrt', cases[index]['summary']

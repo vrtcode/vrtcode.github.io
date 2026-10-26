@@ -1,0 +1,41 @@
+{
+  "operatorClaims": {
+    "experience": "18+ years",
+    "role": "ethical hacker",
+    "scope": "websites, web services, mobile apps, APIs, and related systems"
+  },
+  "bodyChanges": [
+    {
+      "old": "I'm vrt. I dig into mobile apps, native code, and backends to figure out what's actually happening. Weird behavior? I follow the traces, test the hunch, and keep the receipts.",
+      "new": "I'm vrt — an ethical hacker with 18+ years of finding bugs in websites, web services, mobile apps, and the stuff in between. I dig through the code, follow the traces, and keep the receipts."
+    },
+    {
+      "old": "That's the stuff I like digging into: Android and iOS integrations, native code, network protocols, and backend logic that doesn't quite match the story. I chase the cause, put the theory on trial, and turn what holds up into a repeatable check or a focused fix.",
+      "new": "I've spent 18+ years hunting vulnerabilities in websites, web services, mobile apps, APIs, and the plumbing behind them. As an ethical hacker, I work on systems I own or have permission to test. I chase the cause, put the theory on trial, and turn what holds up into a repeatable check or a focused fix."
+    },
+    {
+      "old": "Real work, with the private bits stripped out. The code stays private; names, identifiers, and infrastructure details don't make the cut.",
+      "new": "Real work, with the private bits stripped out. Most code stays private; the Fenrir case links to my public contribution. Raw traces, identifiers, and infrastructure details don't make the cut."
+    },
+    {
+      "old": "{{ cs.source }}; code and raw reports stay private",
+      "new": "{{ cs.source }}; {{ cs.sourceNote }}\n<sc-for list=\"{{ cs.publicLinks }}\" as=\"publicLink\">\n<a href=\"{{ publicLink.href }}\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:block;margin-top:8px;font-size:14px;color:#66D9EF;text-decoration:none\" style-hover=\"color:#EDF3F8\">{{ publicLink.label }} <span aria-hidden=\"true\">↗</span><span class=\"sr-only\"> (opens a new tab)</span></a>\n</sc-for>"
+    }
+  ],
+  "fenrir": {
+    "pullRequest": "https://github.com/R0rt1z2/fenrir/pull/29",
+    "author": "vrtcode",
+    "title": "fenrir: add safe Tetris 240910 profile",
+    "head": "9f7f9c9257a4d05f38c698e7c838d515de170f82",
+    "state": "closed",
+    "merged": false,
+    "reviewedAt": "2026-10-26",
+    "sourceFilesReviewed": [
+      "injector/device.py",
+      "injector/devices.py",
+      "injector/stage.py",
+      "docs/tetris.md"
+    ],
+    "personalFirmwareResearch": "Local saved report for 24-build static firmware comparison re-read; not a new device/runtime measurement."
+  }
+}
