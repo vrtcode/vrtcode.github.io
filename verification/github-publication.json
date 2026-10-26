@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "af8c751e54519dac925bc35689cf857f989b8926",
+  "ci": {
+    "run": 40250314527,
+    "conclusion": "success"
+  },
+  "unexpectedLegacyRun": 40250311631,
+  "initialBuildType": "legacy",
+  "initialSource": {
+    "branch": "main",
+    "path": "/"
+  },
+  "publicResultObserved": "HTTP 200 Jekyll-rendered README, not built portfolio",
+  "correctedBuildType": "workflow",
+  "manualPortfolioWorkflowDispatched": false,
+  "deactivationAttempts": [
+    {
+      "method": "DELETE Pages REST API",
+      "status": 422,
+      "message": "Deactivating GitHub pages for this repository is not allowed."
+    },
+    {
+      "method": "DELETE Pages REST API after workflow source correction",
+      "status": 422,
+      "message": "Deactivating GitHub pages for this repository is not allowed."
+    }
+  ],
+  "remainingGate": "Authenticated GitHub Pages UI Unpublish site, or explicitly approved intended-artifact deployment."
+}

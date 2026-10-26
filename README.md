@@ -41,7 +41,7 @@ The repository name `vrtcode.github.io` is the user-site convention. A different
 
 The publication workflow obtains the actual URL from the official `actions/configure-pages` action. It passes `base_url` to the production build; that value includes a project subpath or configured custom domain when applicable. It uploads **only `dist/`**, never the source directory.
 
-Publication is manual on purpose. A normal push runs tests, not deployment. No personal access token, repository secret, or third-party deployment account is required: the official deployment action uses the workflow's narrowly scoped GitHub permissions and OIDC.
+Publication through the supplied workflow is manual on purpose. A normal push runs tests, not that deployment. The hosting setting must also be **GitHub Actions**: a user-site repository configured for legacy branch publishing can separately auto-publish its README/source. That legacy behavior was observed after the first push and the source setting was corrected; see `VERIFICATION.md` for the remaining old-deployment cleanup. No personal access token, repository secret, or third-party deployment account is required: the official deployment action uses the workflow's narrowly scoped GitHub permissions and OIDC.
 
 After the first approved deployment, automatic updates can be enabled by adding a `push` trigger restricted to the default branch in `.github/workflows/pages.yml`. Keep the tests and deploy job dependency intact.
 
