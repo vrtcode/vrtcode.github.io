@@ -1,0 +1,34 @@
+[
+  {
+    "page": "home",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92.0
+    },
+    "failedAudits": [
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is not valid",
+        "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/).",
+        "details": null
+      }
+    ]
+  },
+  {
+    "page": "case",
+    "scores": {
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 92.0
+    },
+    "failedAudits": [
+      {
+        "id": "robots-txt",
+        "title": "robots.txt is not valid",
+        "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/).",
+        "details": null
+      }
+    ]
+  }
+]

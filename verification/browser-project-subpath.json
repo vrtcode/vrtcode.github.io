@@ -1,0 +1,518 @@
+{
+  "engine": "Chromium",
+  "checks": 72,
+  "allPassed": true,
+  "externalResourceRequests": 0,
+  "reducedMotion": "PASS",
+  "pointerAttraction": "PASS",
+  "pointerReturn": "PASS",
+  "pointerMovementPx": 19.513,
+  "pointerAfterReleasePx": 2.283,
+  "menu": "PASS",
+  "results": [
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 360,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 390,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 768,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": true,
+      "width": 1440,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 360,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 390,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 768,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/android-integrity/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/realtime-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/worker-lifecycle/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/mobile-sdk-analysis/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/push-integration-security/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/network-observability/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/work/ios-attestation/",
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "javascript": false,
+      "width": 1440,
+      "route": "/not-a-real-page/",
+      "status": 404,
+      "result": "PASS"
+    }
+  ]
+}

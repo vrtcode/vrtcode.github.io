@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "android-integrity",
+    "diagram": "diagramCard",
+    "elements": 32,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "android-integrity",
+    "diagram": "diagramLarge",
+    "elements": 32,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "realtime-security",
+    "diagram": "diagramCard",
+    "elements": 23,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "realtime-security",
+    "diagram": "diagramLarge",
+    "elements": 23,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "worker-lifecycle",
+    "diagram": "diagramCard",
+    "elements": 24,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "worker-lifecycle",
+    "diagram": "diagramLarge",
+    "elements": 24,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "mobile-sdk-analysis",
+    "diagram": "diagramCard",
+    "elements": 31,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "mobile-sdk-analysis",
+    "diagram": "diagramLarge",
+    "elements": 31,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "push-integration-security",
+    "diagram": "diagramCard",
+    "elements": 30,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "push-integration-security",
+    "diagram": "diagramLarge",
+    "elements": 30,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "network-observability",
+    "diagram": "diagramCard",
+    "elements": 35,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "network-observability",
+    "diagram": "diagramLarge",
+    "elements": 35,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "EXACT"
+  },
+  {
+    "slug": "ios-attestation",
+    "diagram": "diagramCard",
+    "elements": 25,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "INTENTIONALLY REWORDED"
+  },
+  {
+    "slug": "ios-attestation",
+    "diagram": "diagramLarge",
+    "elements": 25,
+    "coordinatesAttributesStyleAndVisibleText": "EXACT",
+    "accessibleDescription": "INTENTIONALLY REWORDED"
+  }
+]

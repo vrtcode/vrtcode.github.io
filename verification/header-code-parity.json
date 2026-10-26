@@ -1,0 +1,156 @@
+[
+  {
+    "tag": "header",
+    "selectors": [
+      ".site-header"
+    ],
+    "declarations_checked": 7,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "div",
+    "selectors": [
+      ".header-inner"
+    ],
+    "declarations_checked": 8,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "a",
+    "selectors": [
+      ".wordmark"
+    ],
+    "declarations_checked": 6,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "span",
+    "selectors": [
+      ".wordmark span"
+    ],
+    "declarations_checked": 1,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "nav",
+    "selectors": [
+      ".desktop-nav"
+    ],
+    "declarations_checked": 3,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "ul",
+    "selectors": [
+      ".desktop-nav ul"
+    ],
+    "declarations_checked": 6,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "a",
+    "selectors": [
+      ".desktop-nav ul a"
+    ],
+    "declarations_checked": 3,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "a",
+    "selectors": [
+      ".header-github"
+    ],
+    "declarations_checked": 11,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "span",
+    "selectors": [
+      ".header-github>span:first-child"
+    ],
+    "declarations_checked": 1,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "span",
+    "selectors": [
+      ".sr-only"
+    ],
+    "declarations_checked": 5,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "button",
+    "selectors": [
+      ".menu-button"
+    ],
+    "declarations_checked": 9,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "nav",
+    "selectors": [
+      ".mobile-nav"
+    ],
+    "declarations_checked": 3,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "ul",
+    "selectors": [
+      ".mobile-nav ul"
+    ],
+    "declarations_checked": 5,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "li",
+    "selectors": [
+      ".mobile-nav li:not(:last-child)"
+    ],
+    "declarations_checked": 1,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "a",
+    "selectors": [
+      ".mobile-nav a"
+    ],
+    "declarations_checked": 7,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "span",
+    "selectors": [
+      ".nav-num"
+    ],
+    "declarations_checked": 3,
+    "differences": {},
+    "hover_differences": {}
+  },
+  {
+    "tag": "a",
+    "selectors": [
+      ".mobile-nav a",
+      ".mobile-nav .mobile-github"
+    ],
+    "declarations_checked": 7,
+    "differences": {},
+    "hover_differences": {}
+  }
+]

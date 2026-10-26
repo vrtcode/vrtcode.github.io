@@ -1,0 +1,1110 @@
+[
+  {
+    "width": 390,
+    "elementCount": {
+      "source": 505,
+      "target": 505
+    },
+    "mainStyleDifferences": [
+      {
+        "index": 100,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 149,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 189,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 230,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 278,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 325,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 377,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 417,
+        "tag": "SECTION",
+        "id": "approach",
+        "diffs": {
+          "height": {
+            "source": "1886.84px",
+            "target": "1910.09px"
+          }
+        }
+      },
+      {
+        "index": 418,
+        "tag": "DIV",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "1885.84px",
+            "target": "1909.09px"
+          }
+        }
+      },
+      {
+        "index": 443,
+        "tag": "DIV",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "645.594px",
+            "target": "668.844px"
+          }
+        }
+      },
+      {
+        "index": 445,
+        "tag": "DIV",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "569px",
+            "target": "592.25px"
+          }
+        }
+      },
+      {
+        "index": 458,
+        "tag": "DIV",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "189px",
+            "target": "212.25px"
+          }
+        }
+      },
+      {
+        "index": 462,
+        "tag": "P",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "46.5px",
+            "target": "69.75px"
+          }
+        }
+      },
+      {
+        "index": 464,
+        "tag": "SECTION",
+        "id": "tools",
+        "diffs": {
+          "height": {
+            "source": "1268.75px",
+            "target": "1244.75px"
+          }
+        }
+      },
+      {
+        "index": 465,
+        "tag": "DIV",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "1267.75px",
+            "target": "1243.75px"
+          }
+        }
+      },
+      {
+        "index": 466,
+        "tag": "DIV",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "185.172px",
+            "target": "161.172px"
+          }
+        }
+      },
+      {
+        "index": 469,
+        "tag": "P",
+        "id": "",
+        "diffs": {
+          "height": {
+            "source": "72px",
+            "target": "48px"
+          }
+        }
+      }
+    ],
+    "backgrounds": [
+      {
+        "name": "source",
+        "sha256": "8327b6a84ed58bfed5b6035173c23315d283afb598cbc61c53644cd355c80890",
+        "css": {
+          "opacity": "1",
+          "width": 390,
+          "height": 1000
+        }
+      },
+      {
+        "name": "target",
+        "sha256": "8327b6a84ed58bfed5b6035173c23315d283afb598cbc61c53644cd355c80890",
+        "css": {
+          "opacity": "1",
+          "width": 390,
+          "height": 1000
+        }
+      }
+    ],
+    "canvasPixelsEqual": true,
+    "hover": [],
+    "menu": {
+      "source": {
+        "text": "vrt_\nClose\nAbout\n01\nFocus\n02\nWork\n03\nApproach\n04\nContact\n05\ngithub.com/vrtcode ↗",
+        "items": [
+          {
+            "text": "About\n01",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Focus\n02",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Work\n03",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Approach\n04",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Contact\n05",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "github.com/vrtcode ↗",
+            "css": {
+              "font-family": "\"IBM Plex Mono\", monospace",
+              "font-size": "14px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "22.4px",
+              "letter-spacing": "normal",
+              "color": "rgb(102, 217, 239)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(102, 217, 239)",
+              "border-right-color": "rgb(102, 217, 239)",
+              "border-bottom-color": "rgb(102, 217, 239)",
+              "border-left-color": "rgb(102, 217, 239)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "normal",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(102, 217, 239)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          }
+        ]
+      },
+      "target": {
+        "text": "vrt_\nClose\nAbout\n01\nFocus\n02\nWork\n03\nApproach\n04\nContact\n05\ngithub.com/vrtcode ↗",
+        "items": [
+          {
+            "text": "About\n01",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Focus\n02",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Work\n03",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Approach\n04",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "Contact\n05",
+            "css": {
+              "font-family": "\"IBM Plex Sans\", system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "27.2px",
+              "letter-spacing": "normal",
+              "color": "rgb(237, 243, 248)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(237, 243, 248)",
+              "border-right-color": "rgb(237, 243, 248)",
+              "border-bottom-color": "rgb(237, 243, 248)",
+              "border-left-color": "rgb(237, 243, 248)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(237, 243, 248)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          },
+          {
+            "text": "github.com/vrtcode ↗",
+            "css": {
+              "font-family": "\"IBM Plex Mono\", monospace",
+              "font-size": "14px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "line-height": "22.4px",
+              "letter-spacing": "normal",
+              "color": "rgb(102, 217, 239)",
+              "background-color": "rgba(0, 0, 0, 0)",
+              "background-image": "none",
+              "box-shadow": "none",
+              "text-shadow": "none",
+              "opacity": "1",
+              "border-top-color": "rgb(102, 217, 239)",
+              "border-right-color": "rgb(102, 217, 239)",
+              "border-bottom-color": "rgb(102, 217, 239)",
+              "border-left-color": "rgb(102, 217, 239)",
+              "border-top-width": "0px",
+              "border-right-width": "0px",
+              "border-bottom-width": "0px",
+              "border-left-width": "0px",
+              "border-top-style": "none",
+              "border-right-style": "none",
+              "border-bottom-style": "none",
+              "border-left-style": "none",
+              "border-top-left-radius": "0px",
+              "border-top-right-radius": "0px",
+              "border-bottom-right-radius": "0px",
+              "border-bottom-left-radius": "0px",
+              "padding-top": "0px",
+              "padding-right": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "0px",
+              "margin-top": "0px",
+              "margin-right": "0px",
+              "margin-bottom": "0px",
+              "margin-left": "0px",
+              "display": "flex",
+              "position": "static",
+              "width": "342px",
+              "height": "52px",
+              "max-width": "none",
+              "gap": "normal",
+              "align-items": "center",
+              "justify-content": "flex-start",
+              "transition-property": "none",
+              "transition-duration": "0s",
+              "transition-timing-function": "ease",
+              "transform": "none",
+              "fill": "rgb(0, 0, 0)",
+              "stroke": "none",
+              "stroke-width": "1px",
+              "text-anchor": "start",
+              "dominant-baseline": "auto",
+              "text-decoration-line": "none",
+              "text-decoration-color": "rgb(102, 217, 239)",
+              "text-decoration-thickness": "auto",
+              "text-underline-offset": "3px"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "width": 1440,
+    "elementCount": {
+      "source": 505,
+      "target": 505
+    },
+    "mainStyleDifferences": [
+      {
+        "index": 100,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 149,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 189,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 230,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 278,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 325,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      },
+      {
+        "index": 377,
+        "tag": "SPAN",
+        "id": "",
+        "diffs": {
+          "width": {
+            "source": "52.9375px",
+            "target": "52.9219px"
+          }
+        }
+      }
+    ],
+    "backgrounds": [
+      {
+        "name": "source",
+        "sha256": "91fca8beabbdc76efa710d2cd5d3aa4efbec7a56d55059697d599ba7ec410edc",
+        "css": {
+          "opacity": "1",
+          "width": 1440,
+          "height": 1000
+        }
+      },
+      {
+        "name": "target",
+        "sha256": "91fca8beabbdc76efa710d2cd5d3aa4efbec7a56d55059697d599ba7ec410edc",
+        "css": {
+          "opacity": "1",
+          "width": 1440,
+          "height": 1000
+        }
+      }
+    ],
+    "canvasPixelsEqual": true,
+    "hover": [
+      {
+        "selector": "header a[target=\"_blank\"]",
+        "diffs": []
+      },
+      {
+        "selector": "#top a[href$=\"#work\"]",
+        "diffs": []
+      },
+      {
+        "selector": "#top a[target=\"_blank\"]",
+        "diffs": []
+      },
+      {
+        "selector": "#work article:first-child",
+        "diffs": []
+      },
+      {
+        "selector": "#work article:first-child h3 a",
+        "diffs": []
+      },
+      {
+        "selector": "#contact a[href*=\"github.com\"]",
+        "diffs": []
+      }
+    ],
+    "menu": null
+  }
+]

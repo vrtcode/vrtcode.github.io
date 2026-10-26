@@ -1,0 +1,8 @@
+html,body{margin:0;background:#080C12;color:#EDF3F8;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+a{color:#66D9EF;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#EDF3F8}
+:focus-visible{outline:2px solid #66D9EF;outline-offset:3px;border-radius:4px}
+::selection{background:#66D9EF;color:#080C12}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

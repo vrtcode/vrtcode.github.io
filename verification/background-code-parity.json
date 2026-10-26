@@ -1,0 +1,158 @@
+[
+  {
+    "width": 390,
+    "height": 1000,
+    "dpr": 1,
+    "reducedMotion": false,
+    "steps": 71,
+    "commandCount": 29180,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 390,
+      "height": 1000
+    }
+  },
+  {
+    "width": 390,
+    "height": 1000,
+    "dpr": 1,
+    "reducedMotion": true,
+    "steps": 2,
+    "commandCount": 784,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 390,
+      "height": 1000
+    }
+  },
+  {
+    "width": 390,
+    "height": 1000,
+    "dpr": 2,
+    "reducedMotion": false,
+    "steps": 71,
+    "commandCount": 29180,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 780,
+      "height": 2000
+    }
+  },
+  {
+    "width": 390,
+    "height": 1000,
+    "dpr": 2,
+    "reducedMotion": true,
+    "steps": 2,
+    "commandCount": 784,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 780,
+      "height": 2000
+    }
+  },
+  {
+    "width": 390,
+    "height": 1000,
+    "dpr": 3,
+    "reducedMotion": false,
+    "steps": 71,
+    "commandCount": 29180,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 780,
+      "height": 2000
+    }
+  },
+  {
+    "width": 390,
+    "height": 1000,
+    "dpr": 3,
+    "reducedMotion": true,
+    "steps": 2,
+    "commandCount": 784,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 780,
+      "height": 2000
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1,
+    "reducedMotion": false,
+    "steps": 71,
+    "commandCount": 117971,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 1,
+    "reducedMotion": true,
+    "steps": 2,
+    "commandCount": 3334,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 2,
+    "reducedMotion": false,
+    "steps": 71,
+    "commandCount": 117971,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 2880,
+      "height": 2000
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 2,
+    "reducedMotion": true,
+    "steps": 2,
+    "commandCount": 3334,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 2880,
+      "height": 2000
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 3,
+    "reducedMotion": false,
+    "steps": 71,
+    "commandCount": 117971,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 2880,
+      "height": 2000
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "dpr": 3,
+    "reducedMotion": true,
+    "steps": 2,
+    "commandCount": 3334,
+    "exactCommandMatch": true,
+    "canvasSize": {
+      "width": 2880,
+      "height": 2000
+    }
+  }
+]

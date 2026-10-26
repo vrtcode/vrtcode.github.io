@@ -1,0 +1,28 @@
+name: Check static site
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: Build preview
+        run: python3 build.py
+      - name: Run all tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Verify GitHub project subpaths
+        run: |
+          python3 build.py --output project-dist --production --site-url https://example.github.io/portfolio
+          VRT_SITE=project-dist python3 -m unittest discover -s tests -p test_static.py -v

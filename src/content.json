@@ -1,0 +1,612 @@
+{
+  "showGrid": true,
+  "cardDiagrams": true,
+  "navItems": [
+    {
+      "label": "About",
+      "href": "#about",
+      "num": "01"
+    },
+    {
+      "label": "Focus",
+      "href": "#focus",
+      "num": "02"
+    },
+    {
+      "label": "Work",
+      "href": "#work",
+      "num": "03"
+    },
+    {
+      "label": "Approach",
+      "href": "#approach",
+      "num": "04"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact",
+      "num": "05"
+    }
+  ],
+  "flow": [
+    {
+      "label": "device",
+      "desc": "Observe behavior on real hardware or a controlled emulator",
+      "num": "01",
+      "lineTop": "transparent",
+      "lineBottom": "#29394A",
+      "rule": "1px solid #29394A"
+    },
+    {
+      "label": "trace",
+      "desc": "Capture calls, traffic, and native execution paths",
+      "num": "02",
+      "lineTop": "#29394A",
+      "lineBottom": "#29394A",
+      "rule": "1px solid #29394A"
+    },
+    {
+      "label": "analysis",
+      "desc": "Reduce traces to a model of what the system does",
+      "num": "03",
+      "lineTop": "#29394A",
+      "lineBottom": "#29394A",
+      "rule": "1px solid #29394A"
+    },
+    {
+      "label": "test",
+      "desc": "Turn the model into a reproducible check",
+      "num": "04",
+      "lineTop": "#29394A",
+      "lineBottom": "#29394A",
+      "rule": "1px solid #29394A"
+    },
+    {
+      "label": "verification",
+      "desc": "Confirm the result at the layer that matters",
+      "num": "05",
+      "lineTop": "#29394A",
+      "lineBottom": "transparent",
+      "rule": "none"
+    }
+  ],
+  "focus": [
+    {
+      "title": "Mobile security & reverse engineering",
+      "body": "I investigate Android APK, DEX, JNI, and native execution through tracing, emulation, and network analysis. I compare evidence from devices, tools, and backend systems rather than treating a few matching signals as proof of full compatibility.",
+      "num": "01"
+    },
+    {
+      "title": "Application security & backend",
+      "body": "I work with APIs, realtime connections, and access boundaries. I check not only whether authentication exists, but when it happens: before reading data, returning results, or allocating limited resources. Changes are paired with negative scenarios and regression tests.",
+      "num": "02"
+    },
+    {
+      "title": "Distributed workers & reliability",
+      "body": "I investigate task queues, concurrent processing, worker shutdown, and recovery of unfinished work. My focus includes task ownership, error classification, and safe updates across multiple service instances.",
+      "num": "03"
+    },
+    {
+      "title": "Infrastructure & observability",
+      "body": "I work with Linux infrastructure, containers, OpenWrt, and network diagnostics. I test hypotheses against configuration, logs, metrics, and independent requests, separating routing problems from TLS, application, and external-service failures.",
+      "num": "04"
+    }
+  ],
+  "cases": [
+    {
+      "slug": "android-integrity",
+      "title": "Android integrity research: devices, native code, and emulation",
+      "topics": [
+        "Android",
+        "JNI",
+        "unidbg",
+        "Protocol analysis"
+      ],
+      "nodes": [
+        {
+          "label": "device",
+          "arrow": true
+        },
+        {
+          "label": "JNI / native",
+          "arrow": true
+        },
+        {
+          "label": "emulation",
+          "arrow": true
+        },
+        {
+          "label": "server verifier",
+          "arrow": false
+        }
+      ],
+      "source": "Private laboratory research",
+      "summary": "A research environment for comparing native execution on Android devices and in emulation, analyzing protocol behavior, and checking server-side verification boundaries.",
+      "context": "I investigate the interaction between Android applications, native components, and backend verification in integrity and attestation flows. A central challenge is establishing which observations belong to the same execution and where device behavior diverges from emulation.",
+      "approach": "Align application builds, versions, profiles, and inputs; analyze Java, JNI, and native transitions; examine traces and network artifacts; and test how results propagate through worker and backend contracts.",
+      "focus": "Reproducible experiments, isolated diagnostic modes, and a clear distinction between local output and the response from the intended server-side verifier.",
+      "disclosureNote": "Private laboratory research. Sensitive artifacts are not published. This page does not claim a Play Integrity bypass, an accepted official verdict, or complete equivalence between emulation and a physical device.",
+      "num": "01",
+      "href": "/work/android-integrity/",
+      "diagramLabel": "Simplified flow: device, then JNI / native, then emulation, then server verifier",
+      "linkLabel": "Read case study: Android integrity research: devices, native code, and emulation",
+      "topicsText": "Android \u00b7 JNI \u00b7 unidbg \u00b7 Protocol analysis",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 206\" role=\"img\" aria-labelledby=\"dg-android-integrity-card-t dg-android-integrity-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-android-integrity-card-t\">Device and emulation lanes</title><desc id=\"dg-android-integrity-card-d\">Two parallel lanes, physical device and emulation, each run the app with JNI and produce a native trace. Both feed one server-side verifier. Where they join, the open question is whether both belong to the same execution. No verdict is shown.</desc><defs><marker id=\"dg-android-integrity-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"75\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">physical device</text><text x=\"225\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">emulation</text><g><rect x=\"15\" y=\"24\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"75\" y=\"39\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">app \u00b7 JNI</text></g><g><rect x=\"165\" y=\"24\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"225\" y=\"39\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">app \u00b7 JNI</text></g><line x1=\"75\" y1=\"54\" x2=\"75\" y2=\"70\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-android-integrity-card-ah)\"></line><line x1=\"225\" y1=\"54\" x2=\"225\" y2=\"70\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-android-integrity-card-ah)\"></line><g><rect x=\"15\" y=\"72\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"75\" y=\"87\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">native trace</text></g><g><rect x=\"165\" y=\"72\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"225\" y=\"87\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">native trace</text></g><line x1=\"75\" y1=\"102\" x2=\"143\" y2=\"124\" stroke=\"#66D9EF\" stroke-width=\"1.2\"></line><line x1=\"225\" y1=\"102\" x2=\"157\" y2=\"124\" stroke=\"#66D9EF\" stroke-width=\"1.2\"></line><path d=\"M150,120 L158,128 L150,136 L142,128 Z\" fill=\"#080C12\" stroke=\"#66D9EF\" stroke-dasharray=\"2 2\"></path><text x=\"150\" y=\"128\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">?</text><text x=\"164\" y=\"128\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">same execution?</text><line x1=\"150\" y1=\"136\" x2=\"150\" y2=\"150\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-android-integrity-card-ah)\"></line><g><rect x=\"70\" y=\"152\" width=\"160\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#66D9EF\"></rect><text x=\"150\" y=\"167\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">server-side verifier</text></g><text x=\"150\" y=\"198\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">verdict: not claimed</text></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 206\" role=\"img\" aria-labelledby=\"dg-android-integrity-page-t dg-android-integrity-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-android-integrity-page-t\">Device and emulation lanes</title><desc id=\"dg-android-integrity-page-d\">Two parallel lanes, physical device and emulation, each run the app with JNI and produce a native trace. Both feed one server-side verifier. Where they join, the open question is whether both belong to the same execution. No verdict is shown.</desc><defs><marker id=\"dg-android-integrity-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"75\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">physical device</text><text x=\"225\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">emulation</text><g><rect x=\"15\" y=\"24\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"75\" y=\"39\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">app \u00b7 JNI</text></g><g><rect x=\"165\" y=\"24\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"225\" y=\"39\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">app \u00b7 JNI</text></g><line x1=\"75\" y1=\"54\" x2=\"75\" y2=\"70\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-android-integrity-page-ah)\"></line><line x1=\"225\" y1=\"54\" x2=\"225\" y2=\"70\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-android-integrity-page-ah)\"></line><g><rect x=\"15\" y=\"72\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"75\" y=\"87\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">native trace</text></g><g><rect x=\"165\" y=\"72\" width=\"120\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"225\" y=\"87\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">native trace</text></g><line x1=\"75\" y1=\"102\" x2=\"143\" y2=\"124\" stroke=\"#66D9EF\" stroke-width=\"1.2\"></line><line x1=\"225\" y1=\"102\" x2=\"157\" y2=\"124\" stroke=\"#66D9EF\" stroke-width=\"1.2\"></line><path d=\"M150,120 L158,128 L150,136 L142,128 Z\" fill=\"#080C12\" stroke=\"#66D9EF\" stroke-dasharray=\"2 2\"></path><text x=\"150\" y=\"128\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">?</text><text x=\"164\" y=\"128\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">same execution?</text><line x1=\"150\" y1=\"136\" x2=\"150\" y2=\"150\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-android-integrity-page-ah)\"></line><g><rect x=\"70\" y=\"152\" width=\"160\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#66D9EF\"></rect><text x=\"150\" y=\"167\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">server-side verifier</text></g><text x=\"150\" y=\"198\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">verdict: not claimed</text></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Device and emulation runs can be aligned on build, version, profile, and inputs before their outputs are compared.",
+          "label": "Principle",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Remaining differences between the two lanes come from the execution environment rather than from mismatched inputs.",
+          "label": "Hypothesis",
+          "glyph": "\u25c7",
+          "color": "#66D9EF"
+        },
+        {
+          "text": "No accepted official verdict and no full equivalence between emulation and a physical device is claimed.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    },
+    {
+      "slug": "realtime-security",
+      "title": "Securing realtime connections",
+      "topics": [
+        "WebSocket",
+        "Authentication",
+        "Python",
+        "TypeScript"
+      ],
+      "nodes": [
+        {
+          "label": "client",
+          "arrow": true
+        },
+        {
+          "label": "authenticate",
+          "arrow": true
+        },
+        {
+          "label": "register connection",
+          "arrow": true
+        },
+        {
+          "label": "session",
+          "arrow": false
+        }
+      ],
+      "source": "Private source",
+      "summary": "Authentication design for a realtime channel, covering client/server coordination, negative scenarios, and protection of limited connection resources.",
+      "context": "Protecting ordinary HTTP requests is not enough for a realtime interface. The connection itself needs a verifiable relationship to the correct session and predictable access-denial behavior.",
+      "approach": "Align the client and server protocol, authenticate before registering a connection, keep sensitive values out of URLs, and test invalid or missing credentials alongside reconnect behavior.",
+      "focus": "Verify the access boundary independently of business logic. An authentication failure should not become an endless retry loop or consume another user's connection capacity.",
+      "disclosureNote": "An anonymized account of engineering work. Service addresses, identifiers, specific findings, and the system's operational state are not disclosed.",
+      "num": "02",
+      "href": "/work/realtime-security/",
+      "diagramLabel": "Simplified flow: client, then authenticate, then register connection, then session",
+      "linkLabel": "Read case study: Securing realtime connections",
+      "topicsText": "WebSocket \u00b7 Authentication \u00b7 Python \u00b7 TypeScript",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 160\" role=\"img\" aria-labelledby=\"dg-realtime-security-card-t dg-realtime-security-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-realtime-security-card-t\">Authenticate before registering</title><desc id=\"dg-realtime-security-card-d\">Client sends connect with credential. Server authenticates first. On failure, the client is rejected and no connection slot is held. On success, the server registers a slot and returns an accepted, session-bound connection.</desc><defs><marker id=\"dg-realtime-security-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"50\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">client</text><text x=\"250\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">server</text><line x1=\"50\" y1=\"22\" x2=\"50\" y2=\"152\" stroke=\"#29394A\" stroke-width=\"1.2\"></line><line x1=\"250\" y1=\"22\" x2=\"250\" y2=\"152\" stroke=\"#29394A\" stroke-width=\"1.2\"></line><text x=\"150\" y=\"32\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">connect + credential</text><line x1=\"54\" y1=\"40\" x2=\"246\" y2=\"40\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-realtime-security-card-ah)\"></line><g><rect x=\"196\" y=\"52\" width=\"100\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#B5E07A\"></rect><text x=\"246\" y=\"65\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">authenticate</text></g><line x1=\"196\" y1=\"68\" x2=\"54\" y2=\"68\" stroke=\"#66D9EF\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\" marker-end=\"url(#dg-realtime-security-card-ah)\"></line><text x=\"122\" y=\"80\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2715 rejected \u00b7 no slot held</text><text x=\"190\" y=\"105\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"end\" dominant-baseline=\"middle\">valid</text><g><rect x=\"196\" y=\"92\" width=\"100\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"246\" y=\"105\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">register slot</text></g><text x=\"150\" y=\"130\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2713 accepted \u00b7 session bound</text><line x1=\"246\" y1=\"138\" x2=\"54\" y2=\"138\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-realtime-security-card-ah)\"></line></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 160\" role=\"img\" aria-labelledby=\"dg-realtime-security-page-t dg-realtime-security-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-realtime-security-page-t\">Authenticate before registering</title><desc id=\"dg-realtime-security-page-d\">Client sends connect with credential. Server authenticates first. On failure, the client is rejected and no connection slot is held. On success, the server registers a slot and returns an accepted, session-bound connection.</desc><defs><marker id=\"dg-realtime-security-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"50\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">client</text><text x=\"250\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">server</text><line x1=\"50\" y1=\"22\" x2=\"50\" y2=\"152\" stroke=\"#29394A\" stroke-width=\"1.2\"></line><line x1=\"250\" y1=\"22\" x2=\"250\" y2=\"152\" stroke=\"#29394A\" stroke-width=\"1.2\"></line><text x=\"150\" y=\"32\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">connect + credential</text><line x1=\"54\" y1=\"40\" x2=\"246\" y2=\"40\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-realtime-security-page-ah)\"></line><g><rect x=\"196\" y=\"52\" width=\"100\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#B5E07A\"></rect><text x=\"246\" y=\"65\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">authenticate</text></g><line x1=\"196\" y1=\"68\" x2=\"54\" y2=\"68\" stroke=\"#66D9EF\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\" marker-end=\"url(#dg-realtime-security-page-ah)\"></line><text x=\"122\" y=\"80\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2715 rejected \u00b7 no slot held</text><text x=\"190\" y=\"105\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"end\" dominant-baseline=\"middle\">valid</text><g><rect x=\"196\" y=\"92\" width=\"100\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"246\" y=\"105\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">register slot</text></g><text x=\"150\" y=\"130\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2713 accepted \u00b7 session bound</text><line x1=\"246\" y1=\"138\" x2=\"54\" y2=\"138\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-realtime-security-page-ah)\"></line></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Authentication runs before a connection is registered.",
+          "label": "Implementation",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Invalid and missing credentials are covered by negative tests alongside reconnect behavior.",
+          "label": "Implementation",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "The current operational state of the system is not described.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    },
+    {
+      "slug": "worker-lifecycle",
+      "title": "Predictable shutdown for distributed workers",
+      "topics": [
+        "Python",
+        "Queues",
+        "Concurrency",
+        "Reliability"
+      ],
+      "nodes": [
+        {
+          "label": "signal",
+          "arrow": true
+        },
+        {
+          "label": "stop intake",
+          "arrow": true
+        },
+        {
+          "label": "bounded drain",
+          "arrow": true
+        },
+        {
+          "label": "return owned tasks",
+          "arrow": false
+        }
+      ],
+      "source": "Private source",
+      "summary": "Work on graceful shutdown, draining active operations, and safely returning unfinished tasks when a worker stops.",
+      "context": "Process shutdown is a normal part of a system's lifecycle. If a worker keeps accepting tasks or cannot distinguish task ownership, an update can leave work stuck or handled incorrectly.",
+      "approach": "Stop accepting new work, allow active operations a bounded drain period, and conditionally update only tasks owned by that worker instance. Check repeated signals and transport failures separately.",
+      "focus": "Observable shutdown behavior, regression coverage, and consistency between source code and running instances, rather than a green build alone.",
+      "disclosureNote": "This case describes engineering principles. Infrastructure size, traffic figures, configuration, and current deployment status are not published.",
+      "num": "03",
+      "href": "/work/worker-lifecycle/",
+      "diagramLabel": "Simplified flow: signal, then stop intake, then bounded drain, then return owned tasks",
+      "linkLabel": "Read case study: Predictable shutdown for distributed workers",
+      "topicsText": "Python \u00b7 Queues \u00b7 Concurrency \u00b7 Reliability",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 156\" role=\"img\" aria-labelledby=\"dg-worker-lifecycle-card-t dg-worker-lifecycle-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-worker-lifecycle-card-t\">Worker shutdown states</title><desc id=\"dg-worker-lifecycle-card-d\">Three states: accepting, then draining after a signal, then stopped after a deadline. Draining is bounded. On shutdown, only tasks owned by this worker instance are updated.</desc><defs><marker id=\"dg-worker-lifecycle-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><g><rect x=\"4\" y=\"40\" width=\"76\" height=\"34\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"42\" y=\"57\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">accepting</text></g><g><rect x=\"112\" y=\"40\" width=\"76\" height=\"34\" rx=\"5\" fill=\"#111923\" stroke=\"#66D9EF\"></rect><text x=\"150\" y=\"57\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">draining</text></g><g><rect x=\"220\" y=\"40\" width=\"76\" height=\"34\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"258\" y=\"57\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">stopped</text></g><text x=\"96\" y=\"30\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">signal</text><text x=\"204\" y=\"30\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">deadline</text><line x1=\"80\" y1=\"57\" x2=\"110\" y2=\"57\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-worker-lifecycle-card-ah)\"></line><line x1=\"188\" y1=\"57\" x2=\"218\" y2=\"57\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-worker-lifecycle-card-ah)\"></line><text x=\"150\" y=\"86\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">bounded drain</text><g><rect x=\"4\" y=\"104\" width=\"292\" height=\"46\" rx=\"5\" fill=\"transparent\" stroke=\"#3E5670\" stroke-dasharray=\"4 3\"></rect></g><text x=\"150\" y=\"120\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">on shutdown, update only tasks</text><text x=\"150\" y=\"136\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">owned by this worker instance</text></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 156\" role=\"img\" aria-labelledby=\"dg-worker-lifecycle-page-t dg-worker-lifecycle-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-worker-lifecycle-page-t\">Worker shutdown states</title><desc id=\"dg-worker-lifecycle-page-d\">Three states: accepting, then draining after a signal, then stopped after a deadline. Draining is bounded. On shutdown, only tasks owned by this worker instance are updated.</desc><defs><marker id=\"dg-worker-lifecycle-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><g><rect x=\"4\" y=\"40\" width=\"76\" height=\"34\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"42\" y=\"57\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">accepting</text></g><g><rect x=\"112\" y=\"40\" width=\"76\" height=\"34\" rx=\"5\" fill=\"#111923\" stroke=\"#66D9EF\"></rect><text x=\"150\" y=\"57\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">draining</text></g><g><rect x=\"220\" y=\"40\" width=\"76\" height=\"34\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"258\" y=\"57\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">stopped</text></g><text x=\"96\" y=\"30\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">signal</text><text x=\"204\" y=\"30\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">deadline</text><line x1=\"80\" y1=\"57\" x2=\"110\" y2=\"57\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-worker-lifecycle-page-ah)\"></line><line x1=\"188\" y1=\"57\" x2=\"218\" y2=\"57\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-worker-lifecycle-page-ah)\"></line><text x=\"150\" y=\"86\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">bounded drain</text><g><rect x=\"4\" y=\"104\" width=\"292\" height=\"46\" rx=\"5\" fill=\"transparent\" stroke=\"#3E5670\" stroke-dasharray=\"4 3\"></rect></g><text x=\"150\" y=\"120\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">on shutdown, update only tasks</text><text x=\"150\" y=\"136\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">owned by this worker instance</text></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Shutdown stops intake, drains within a bound, and updates only tasks owned by that worker instance.",
+          "label": "Implementation",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Current deployment status and parity of running instances are not asserted on this page.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    },
+    {
+      "slug": "mobile-sdk-analysis",
+      "title": "Mobile SDK and protocol research",
+      "topics": [
+        "Android",
+        "iOS",
+        "SDK compatibility",
+        "Traffic analysis"
+      ],
+      "nodes": [
+        {
+          "label": "app build",
+          "arrow": true
+        },
+        {
+          "label": "SDK",
+          "arrow": true
+        },
+        {
+          "label": "network exchange",
+          "arrow": true
+        },
+        {
+          "label": "integration contract",
+          "arrow": false
+        }
+      ],
+      "source": "Private laboratory research",
+      "summary": "Research into mobile SDK behavior across application versions, launch contexts, network exchanges, and integration contracts.",
+      "context": "Requests that look alike can behave differently when the SDK, application, platform, or installation context changes. A version listed in documentation is not a substitute for examining a specific build.",
+      "approach": "Analyze application packages and integration code, compare network exchanges and version behavior, establish input provenance, and distinguish static conclusions from runtime observations.",
+      "focus": "Do not generalize from one application or version without a new experiment. Structural protocol similarity is not proof of end-to-end compatibility with an external service.",
+      "disclosureNote": "Laboratory work in owned or explicitly authorized environments. Private traces and requests are not published, and access to third-party systems is not offered.",
+      "num": "04",
+      "href": "/work/mobile-sdk-analysis/",
+      "diagramLabel": "Simplified flow: app build, then SDK, then network exchange, then integration contract",
+      "linkLabel": "Read case study: Mobile SDK and protocol research",
+      "topicsText": "Android \u00b7 iOS \u00b7 SDK compatibility \u00b7 Traffic analysis",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 180\" role=\"img\" aria-labelledby=\"dg-mobile-sdk-analysis-card-t dg-mobile-sdk-analysis-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-mobile-sdk-analysis-card-t\">Inputs to request shapes</title><desc id=\"dg-mobile-sdk-analysis-card-d\">Three input combinations \u2014 version A cold launch, version A resumed, version B cold launch \u2014 each map to a different observed request shape. Note: structural similarity does not equal end-to-end compatibility.</desc><defs><marker id=\"dg-mobile-sdk-analysis-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"70\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">inputs</text><text x=\"234\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">observed request</text><g><rect x=\"4\" y=\"24\" width=\"132\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"70\" y=\"39\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">v.A \u00b7 cold launch</text></g><line x1=\"136\" y1=\"39\" x2=\"170\" y2=\"39\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-mobile-sdk-analysis-card-ah)\"></line><g><rect x=\"172\" y=\"24\" width=\"124\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"234\" y=\"39\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">request shape 1</text></g><g><rect x=\"4\" y=\"62\" width=\"132\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"70\" y=\"77\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">v.A \u00b7 resumed</text></g><line x1=\"136\" y1=\"77\" x2=\"170\" y2=\"77\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-mobile-sdk-analysis-card-ah)\"></line><g><rect x=\"172\" y=\"62\" width=\"124\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"234\" y=\"77\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">request shape 2</text></g><g><rect x=\"4\" y=\"100\" width=\"132\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"70\" y=\"115\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">v.B \u00b7 cold launch</text></g><line x1=\"136\" y1=\"115\" x2=\"170\" y2=\"115\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-mobile-sdk-analysis-card-ah)\"></line><g><rect x=\"172\" y=\"100\" width=\"124\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"234\" y=\"115\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">request shape 3</text></g><text x=\"150\" y=\"150\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">structural similarity</text><text x=\"150\" y=\"166\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2260 end-to-end compatibility</text></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 180\" role=\"img\" aria-labelledby=\"dg-mobile-sdk-analysis-page-t dg-mobile-sdk-analysis-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-mobile-sdk-analysis-page-t\">Inputs to request shapes</title><desc id=\"dg-mobile-sdk-analysis-page-d\">Three input combinations \u2014 version A cold launch, version A resumed, version B cold launch \u2014 each map to a different observed request shape. Note: structural similarity does not equal end-to-end compatibility.</desc><defs><marker id=\"dg-mobile-sdk-analysis-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"70\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">inputs</text><text x=\"234\" y=\"12\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">observed request</text><g><rect x=\"4\" y=\"24\" width=\"132\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"70\" y=\"39\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">v.A \u00b7 cold launch</text></g><line x1=\"136\" y1=\"39\" x2=\"170\" y2=\"39\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-mobile-sdk-analysis-page-ah)\"></line><g><rect x=\"172\" y=\"24\" width=\"124\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"234\" y=\"39\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">request shape 1</text></g><g><rect x=\"4\" y=\"62\" width=\"132\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"70\" y=\"77\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">v.A \u00b7 resumed</text></g><line x1=\"136\" y1=\"77\" x2=\"170\" y2=\"77\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-mobile-sdk-analysis-page-ah)\"></line><g><rect x=\"172\" y=\"62\" width=\"124\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"234\" y=\"77\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">request shape 2</text></g><g><rect x=\"4\" y=\"100\" width=\"132\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"70\" y=\"115\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">v.B \u00b7 cold launch</text></g><line x1=\"136\" y1=\"115\" x2=\"170\" y2=\"115\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-mobile-sdk-analysis-page-ah)\"></line><g><rect x=\"172\" y=\"100\" width=\"124\" height=\"30\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"234\" y=\"115\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">request shape 3</text></g><text x=\"150\" y=\"150\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">structural similarity</text><text x=\"150\" y=\"166\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2260 end-to-end compatibility</text></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Similar-looking requests can differ when the SDK, application, platform, or installation context changes.",
+          "label": "Principle",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Behavior observed in one build carries over to other versions \u2014 treated as untested until a new experiment.",
+          "label": "Hypothesis",
+          "glyph": "\u25c7",
+          "color": "#66D9EF"
+        },
+        {
+          "text": "Structural protocol similarity is not presented as end-to-end compatibility with an external service.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    },
+    {
+      "slug": "push-integration-security",
+      "title": "Security of asynchronous push integrations",
+      "topics": [
+        "APNs",
+        "VoIP",
+        "API security",
+        "Async backend"
+      ],
+      "nodes": [
+        {
+          "label": "API",
+          "arrow": true
+        },
+        {
+          "label": "queue",
+          "arrow": true
+        },
+        {
+          "label": "worker",
+          "arrow": true
+        },
+        {
+          "label": "push provider",
+          "arrow": false
+        }
+      ],
+      "source": "Private source",
+      "summary": "Analysis of boundaries between APIs, queues, workers, and external push providers: result access, transport errors, and consistent task state.",
+      "context": "Accepting an asynchronous task does not establish that it was executed or delivered. Results and status endpoints need access checks just as carefully as the original request.",
+      "approach": "Examine API and background-processing paths, result ownership, caching behavior, and transport errors. Separate internal task status from evidence supplied by the external provider.",
+      "focus": "Safe result handling and accurate interpretation of status, without delivery promises that the provider has not confirmed.",
+      "disclosureNote": "An anonymized overview of the work, not a public vulnerability disclosure or a claim that every historical finding has been remediated.",
+      "num": "05",
+      "href": "/work/push-integration-security/",
+      "diagramLabel": "Simplified flow: API, then queue, then worker, then push provider",
+      "linkLabel": "Read case study: Security of asynchronous push integrations",
+      "topicsText": "APNs \u00b7 VoIP \u00b7 API security \u00b7 Async backend",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 160\" role=\"img\" aria-labelledby=\"dg-push-integration-security-card-t dg-push-integration-security-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-push-integration-security-card-t\">Asynchronous push path</title><desc id=\"dg-push-integration-security-card-d\">API to queue to worker to external provider. The result path from worker back to the status and result endpoint passes an access check. Note at the provider: accepted does not mean delivered.</desc><defs><marker id=\"dg-push-integration-security-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><g><rect x=\"2\" y=\"16\" width=\"64\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"34\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">API</text></g><g><rect x=\"80\" y=\"16\" width=\"64\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"112\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">queue</text></g><g><rect x=\"158\" y=\"16\" width=\"64\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"190\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">worker</text></g><g><rect x=\"236\" y=\"16\" width=\"62\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"267\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">provider</text></g><line x1=\"66\" y1=\"30\" x2=\"78\" y2=\"30\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-card-ah)\"></line><line x1=\"144\" y1=\"30\" x2=\"156\" y2=\"30\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-card-ah)\"></line><line x1=\"222\" y1=\"30\" x2=\"234\" y2=\"30\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-card-ah)\"></line><polyline points=\"190,44 190,104 152,104\" fill=\"none\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-card-ah)\"></polyline><path d=\"M190,66 L198,74 L190,82 L182,74 Z\" fill=\"#080C12\" stroke=\"#B5E07A\"></path><text x=\"176\" y=\"74\" fill=\"#B5E07A\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"end\" dominant-baseline=\"middle\">access check</text><g><rect x=\"4\" y=\"90\" width=\"146\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"77\" y=\"104\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">status / result</text></g><line x1=\"267\" y1=\"44\" x2=\"267\" y2=\"120\" stroke=\"#3E5670\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"></line><text x=\"267\" y=\"134\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">accepted</text><text x=\"267\" y=\"148\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2260 delivered</text></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 160\" role=\"img\" aria-labelledby=\"dg-push-integration-security-page-t dg-push-integration-security-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-push-integration-security-page-t\">Asynchronous push path</title><desc id=\"dg-push-integration-security-page-d\">API to queue to worker to external provider. The result path from worker back to the status and result endpoint passes an access check. Note at the provider: accepted does not mean delivered.</desc><defs><marker id=\"dg-push-integration-security-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><g><rect x=\"2\" y=\"16\" width=\"64\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"34\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">API</text></g><g><rect x=\"80\" y=\"16\" width=\"64\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"112\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">queue</text></g><g><rect x=\"158\" y=\"16\" width=\"64\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"190\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">worker</text></g><g><rect x=\"236\" y=\"16\" width=\"62\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"267\" y=\"30\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">provider</text></g><line x1=\"66\" y1=\"30\" x2=\"78\" y2=\"30\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-page-ah)\"></line><line x1=\"144\" y1=\"30\" x2=\"156\" y2=\"30\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-page-ah)\"></line><line x1=\"222\" y1=\"30\" x2=\"234\" y2=\"30\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-page-ah)\"></line><polyline points=\"190,44 190,104 152,104\" fill=\"none\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-push-integration-security-page-ah)\"></polyline><path d=\"M190,66 L198,74 L190,82 L182,74 Z\" fill=\"#080C12\" stroke=\"#B5E07A\"></path><text x=\"176\" y=\"74\" fill=\"#B5E07A\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"end\" dominant-baseline=\"middle\">access check</text><g><rect x=\"4\" y=\"90\" width=\"146\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"77\" y=\"104\" fill=\"#EDF3F8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">status / result</text></g><line x1=\"267\" y1=\"44\" x2=\"267\" y2=\"120\" stroke=\"#3E5670\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"></line><text x=\"267\" y=\"134\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">accepted</text><text x=\"267\" y=\"148\" fill=\"#66D9EF\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">\u2260 delivered</text></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Accepting an asynchronous task does not establish that it was executed or delivered.",
+          "label": "Principle",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Result and status endpoints need their own access checks.",
+          "label": "Principle",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Not a vulnerability disclosure; remediation of every historical finding is not claimed.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    },
+    {
+      "slug": "network-observability",
+      "title": "Network diagnostics and observability",
+      "topics": [
+        "Linux",
+        "OpenWrt",
+        "DNS/TLS",
+        "Observability"
+      ],
+      "nodes": [
+        {
+          "label": "routing",
+          "arrow": true
+        },
+        {
+          "label": "DNS",
+          "arrow": true
+        },
+        {
+          "label": "TLS",
+          "arrow": true
+        },
+        {
+          "label": "HTTP",
+          "arrow": true
+        },
+        {
+          "label": "application",
+          "arrow": false
+        }
+      ],
+      "source": "Owned infrastructure",
+      "summary": "Layered network diagnostics across routing, DNS, TLS, HTTP, and application behavior, rather than conclusions drawn from one availability signal.",
+      "context": "A website error does not necessarily mean a route is broken. A successful health check does not establish that a particular user workflow works.",
+      "approach": "Inspect effective configuration, run control requests, examine logs and metrics, compare alternative hypotheses, and use reversible experiments without unnecessarily changing healthy components.",
+      "focus": "Causality, control scenarios, and the distinction between network reachability, a service response, and a functioning application workflow.",
+      "disclosureNote": "Internal routes, addresses, and access details are not published. This website does not provide proxy or VPN services.",
+      "num": "06",
+      "href": "/work/network-observability/",
+      "diagramLabel": "Simplified flow: routing, then DNS, then TLS, then HTTP, then application",
+      "linkLabel": "Read case study: Network diagnostics and observability",
+      "topicsText": "Linux \u00b7 OpenWrt \u00b7 DNS/TLS \u00b7 Observability",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 206\" role=\"img\" aria-labelledby=\"dg-network-observability-card-t dg-network-observability-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-network-observability-card-t\">Layered diagnostics</title><desc id=\"dg-network-observability-card-d\">A stack of five layers: application, HTTP, TLS, DNS, routing. An independent control request probes each layer separately. Note: one green signal does not mean a working workflow.</desc><defs><marker id=\"dg-network-observability-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"92\" y=\"10\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">layers</text><text x=\"298\" y=\"10\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"end\" dominant-baseline=\"middle\">control request</text><line x1=\"258\" y1=\"22\" x2=\"258\" y2=\"176\" stroke=\"#66D9EF\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"></line><g><rect x=\"4\" y=\"22\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"35\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">application</text></g><line x1=\"254\" y1=\"35\" x2=\"182\" y2=\"35\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-card-ah)\"></line><circle cx=\"258\" cy=\"35\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"54\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"67\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">HTTP</text></g><line x1=\"254\" y1=\"67\" x2=\"182\" y2=\"67\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-card-ah)\"></line><circle cx=\"258\" cy=\"67\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"86\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"99\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">TLS</text></g><line x1=\"254\" y1=\"99\" x2=\"182\" y2=\"99\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-card-ah)\"></line><circle cx=\"258\" cy=\"99\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"118\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"131\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">DNS</text></g><line x1=\"254\" y1=\"131\" x2=\"182\" y2=\"131\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-card-ah)\"></line><circle cx=\"258\" cy=\"131\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"150\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"163\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">routing</text></g><line x1=\"254\" y1=\"163\" x2=\"182\" y2=\"163\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-card-ah)\"></line><circle cx=\"258\" cy=\"163\" r=\"3\" fill=\"#66D9EF\"></circle><text x=\"150\" y=\"196\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">one green signal \u2260 working workflow</text></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 206\" role=\"img\" aria-labelledby=\"dg-network-observability-page-t dg-network-observability-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-network-observability-page-t\">Layered diagnostics</title><desc id=\"dg-network-observability-page-d\">A stack of five layers: application, HTTP, TLS, DNS, routing. An independent control request probes each layer separately. Note: one green signal does not mean a working workflow.</desc><defs><marker id=\"dg-network-observability-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><text x=\"92\" y=\"10\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">layers</text><text x=\"298\" y=\"10\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"end\" dominant-baseline=\"middle\">control request</text><line x1=\"258\" y1=\"22\" x2=\"258\" y2=\"176\" stroke=\"#66D9EF\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"></line><g><rect x=\"4\" y=\"22\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"35\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">application</text></g><line x1=\"254\" y1=\"35\" x2=\"182\" y2=\"35\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-page-ah)\"></line><circle cx=\"258\" cy=\"35\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"54\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"67\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">HTTP</text></g><line x1=\"254\" y1=\"67\" x2=\"182\" y2=\"67\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-page-ah)\"></line><circle cx=\"258\" cy=\"67\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"86\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"99\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">TLS</text></g><line x1=\"254\" y1=\"99\" x2=\"182\" y2=\"99\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-page-ah)\"></line><circle cx=\"258\" cy=\"99\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"118\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"131\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">DNS</text></g><line x1=\"254\" y1=\"131\" x2=\"182\" y2=\"131\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-page-ah)\"></line><circle cx=\"258\" cy=\"131\" r=\"3\" fill=\"#66D9EF\"></circle><g><rect x=\"4\" y=\"150\" width=\"176\" height=\"26\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"92\" y=\"163\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">routing</text></g><line x1=\"254\" y1=\"163\" x2=\"182\" y2=\"163\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-network-observability-page-ah)\"></line><circle cx=\"258\" cy=\"163\" r=\"3\" fill=\"#66D9EF\"></circle><text x=\"150\" y=\"196\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">one green signal \u2260 working workflow</text></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Network reachability, a service response, and a working user workflow are separate observations.",
+          "label": "Principle",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Internal routes, addresses, and topology are out of scope for this page.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    },
+    {
+      "slug": "ios-attestation",
+      "title": "iOS platform and hardware-backed attestation research",
+      "topics": [
+        "iOS",
+        "Secure Enclave",
+        "Attestation",
+        "Protocol analysis"
+      ],
+      "nodes": [],
+      "source": "Private laboratory research",
+      "summary": "Study of how iOS hardware-backed key attestation, app attestation, and device-boot behavior work, on owned or explicitly authorized hardware.",
+      "context": "This work examines iOS attestation-related APIs and platform behavior. The aim is to separate client assertions, hardware-backed operations, and server-side checks, without treating application-level observations as proof of secure hardware properties.",
+      "approach": "Read platform behavior and framework interfaces, observe the network exchanges that carry attestation material, and align observations across operating-system versions and launch contexts. Treat a documented behavior as a starting point, not a substitute for examining a specific build.",
+      "focus": "Describe the mechanism and its boundaries precisely. Distinguish what the secure enclave establishes from what the surrounding application claims, and mark clearly where a conclusion is an observation rather than a confirmed property.",
+      "disclosureNote": "Private laboratory research on owned or explicitly authorized hardware. Sensitive artifacts and device identifiers are not published. This work studies platform behavior; it does not claim an attestation bypass or an accepted server-side result.",
+      "num": "07",
+      "href": "/work/ios-attestation/",
+      "diagramLabel": "Simplified flow: ",
+      "linkLabel": "Read case study: iOS platform and hardware-backed attestation research",
+      "topicsText": "iOS \u00b7 Secure Enclave \u00b7 Attestation \u00b7 Protocol analysis",
+      "diagramCard": {
+        "$html": "<svg viewBox=\"0 0 300 176\" role=\"img\" aria-labelledby=\"dg-ios-attestation-card-t dg-ios-attestation-card-d\" style=\"width:100%;max-width:460px;height:auto;display:block\"><title id=\"dg-ios-attestation-card-t\">Attestation chain, abstract</title><desc id=\"dg-ios-attestation-card-d\">A conceptual separation of client assertions, hardware-backed operations, platform services, and server-side checks. This is not an exact App Attest or DeviceCheck API sequence, and no accepted verdict is claimed.</desc><defs><marker id=\"dg-ios-attestation-card-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><g><rect x=\"4\" y=\"8\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"79\" y=\"22\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">client assertion</text></g><text x=\"166\" y=\"22\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">client only claims</text><line x1=\"79\" y1=\"36\" x2=\"79\" y2=\"48\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-ios-attestation-card-ah)\"></line><g><rect x=\"4\" y=\"50\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#B5E07A\"></rect><text x=\"79\" y=\"64\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">secure enclave</text></g><text x=\"166\" y=\"64\" fill=\"#B5E07A\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">enclave establishes</text><line x1=\"79\" y1=\"78\" x2=\"79\" y2=\"90\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-ios-attestation-card-ah)\"></line><g><rect x=\"4\" y=\"92\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"79\" y=\"106\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">platform service</text></g><line x1=\"79\" y1=\"120\" x2=\"79\" y2=\"132\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-ios-attestation-card-ah)\"></line><g><rect x=\"4\" y=\"134\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"79\" y=\"148\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">server-side check</text></g><text x=\"166\" y=\"148\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">verdict: not claimed</text><line x1=\"4\" y1=\"44\" x2=\"296\" y2=\"44\" stroke=\"#29394A\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"></line></svg>"
+      },
+      "diagramLarge": {
+        "$html": "<svg viewBox=\"0 0 300 176\" role=\"img\" aria-labelledby=\"dg-ios-attestation-page-t dg-ios-attestation-page-d\" style=\"width:100%;max-width:560px;height:auto;display:block\"><title id=\"dg-ios-attestation-page-t\">Attestation chain, abstract</title><desc id=\"dg-ios-attestation-page-d\">A conceptual separation of client assertions, hardware-backed operations, platform services, and server-side checks. This is not an exact App Attest or DeviceCheck API sequence, and no accepted verdict is claimed.</desc><defs><marker id=\"dg-ios-attestation-page-ah\" viewBox=\"0 0 8 8\" refX=\"7\" refY=\"4\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto-start-reverse\"><path d=\"M0,0 L8,4 L0,8 z\" fill=\"#66D9EF\"></path></marker></defs><g><rect x=\"4\" y=\"8\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"79\" y=\"22\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">client assertion</text></g><text x=\"166\" y=\"22\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">client only claims</text><line x1=\"79\" y1=\"36\" x2=\"79\" y2=\"48\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-ios-attestation-page-ah)\"></line><g><rect x=\"4\" y=\"50\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#B5E07A\"></rect><text x=\"79\" y=\"64\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">secure enclave</text></g><text x=\"166\" y=\"64\" fill=\"#B5E07A\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">enclave establishes</text><line x1=\"79\" y1=\"78\" x2=\"79\" y2=\"90\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-ios-attestation-page-ah)\"></line><g><rect x=\"4\" y=\"92\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"79\" y=\"106\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">platform service</text></g><line x1=\"79\" y1=\"120\" x2=\"79\" y2=\"132\" stroke=\"#66D9EF\" stroke-width=\"1.2\" marker-end=\"url(#dg-ios-attestation-page-ah)\"></line><g><rect x=\"4\" y=\"134\" width=\"150\" height=\"28\" rx=\"5\" fill=\"#111923\" stroke=\"#3E5670\"></rect><text x=\"79\" y=\"148\" fill=\"#EDF3F8\" font-size=\"11\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"middle\" dominant-baseline=\"middle\">server-side check</text></g><text x=\"166\" y=\"148\" fill=\"#A8B8C8\" font-size=\"10\" font-family=\"'IBM Plex Mono',monospace\" text-anchor=\"start\" dominant-baseline=\"middle\">verdict: not claimed</text><line x1=\"4\" y1=\"44\" x2=\"296\" y2=\"44\" stroke=\"#29394A\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"></line></svg>"
+      },
+      "evidenceList": [
+        {
+          "text": "Attestation material is carried in network exchanges that can be observed on owned hardware.",
+          "label": "Principle",
+          "glyph": "\u25a0",
+          "color": "#B5E07A"
+        },
+        {
+          "text": "Observed platform behavior holds across operating-system versions and launch contexts \u2014 not confirmed for each build.",
+          "label": "Hypothesis",
+          "glyph": "\u25c7",
+          "color": "#66D9EF"
+        },
+        {
+          "text": "No claim to defeat, bypass, or pass App Attest, DeviceCheck, or any platform attestation.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        },
+        {
+          "text": "Boot-level and hardware-level behavior remains an open area of study.",
+          "label": "Limitation",
+          "glyph": "\u2298",
+          "color": "#A8B8C8"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start with context",
+      "body": "Establish what is actually running: version, configuration, inputs, and environment boundaries. Documentation helps locate the path, but does not replace observation.",
+      "num": "01",
+      "bar": "#66D9EF"
+    },
+    {
+      "title": "Form a testable hypothesis",
+      "body": "Define which result would support or disprove an explanation. Aim for a reproduction before changing code.",
+      "num": "02",
+      "bar": "#66D9EF"
+    },
+    {
+      "title": "Keep experiments focused",
+      "body": "Prefer narrow changes and controlled experiments over batches of edits that make the cause of a result difficult to identify.",
+      "num": "03",
+      "bar": "#66D9EF"
+    },
+    {
+      "title": "Verify at the relevant layer",
+      "body": "Unit tests, integration tests, devices, and external APIs answer different questions. Success at one layer does not replace checks at the others.",
+      "num": "04",
+      "bar": "#66D9EF"
+    },
+    {
+      "title": "Limit disclosure",
+      "body": "Share methods and conclusions, not private data. Work only on owned systems or with explicit authorization.",
+      "num": "05",
+      "bar": "#B5E07A"
+    }
+  ],
+  "layers": [
+    {
+      "title": "Local tests",
+      "shows": "The implementation satisfied the assertions exercised by the selected tests.",
+      "misses": "Real devices, real networks, and server-side enforcement."
+    },
+    {
+      "title": "Device behavior",
+      "shows": "What the client does in the tested device or emulator environment.",
+      "misses": "Whether the server accepts, rejects, or ignores what it receives."
+    },
+    {
+      "title": "External server verification",
+      "shows": "The observed outcome of the tested server-side verification path.",
+      "misses": "Untested requests and internal causes; a response alone does not explain the mechanism."
+    }
+  ],
+  "tools": [
+    {
+      "area": "Backend",
+      "items": "Python \u00b7 async I/O \u00b7 FastAPI \u00b7 MongoDB \u00b7 HTTP APIs \u00b7 WebSocket"
+    },
+    {
+      "area": "Web",
+      "items": "TypeScript \u00b7 React \u00b7 Next.js \u00b7 account and administration interfaces \u00b7 internationalization"
+    },
+    {
+      "area": "Mobile research",
+      "items": "Android \u00b7 APK/DEX/JNI \u00b7 Java \u00b7 native analysis \u00b7 unidbg \u00b7 Frida \u00b7 ADB \u00b7 network traces \u00b7 HAR \u00b7 protobuf"
+    },
+    {
+      "area": "Mobile integrations",
+      "items": "Android/iOS SDKs \u00b7 APNs/VoIP \u00b7 integrity and attestation flows"
+    },
+    {
+      "area": "iOS research",
+      "items": "Secure Enclave and hardware-backed key attestation \u00b7 App Attest / DeviceCheck behavior \u00b7 framework and protocol analysis \u00b7 Objective-C/Swift interface analysis \u00b7 TLS/network observation"
+    },
+    {
+      "area": "Infrastructure",
+      "items": "Linux \u00b7 Docker \u00b7 OpenWrt \u00b7 network configuration \u00b7 DNS/TLS \u00b7 Prometheus \u00b7 Loki"
+    },
+    {
+      "area": "Engineering practice",
+      "items": "Regression tests \u00b7 reproducible experiments \u00b7 release verification \u00b7 rollback planning"
+    }
+  ]
+}
