@@ -3,7 +3,7 @@
 An English-only personal portfolio with conversational technical copy, prepared for **GitHub Pages**.
 
 Repository: [vrtcode/vrtcode.github.io](https://github.com/vrtcode/vrtcode.github.io).
-The intended initial Pages address is `https://vrtcode.github.io/`; repository creation does not mean that Pages has been enabled or the website deployed.
+The portfolio is live at [vrtcode.github.io](https://vrtcode.github.io/). The approved deployment publishes only the production `dist/` artifact. See `PUBLICATION.md` for the pinned source revision and independent public checks.
 
 ## What is included
 
@@ -41,7 +41,7 @@ The repository name `vrtcode.github.io` is the user-site convention. A different
 
 The publication workflow obtains the actual URL from the official `actions/configure-pages` action. It passes `base_url` to the production build; that value includes a project subpath or configured custom domain when applicable. It uploads **only `dist/`**, never the source directory.
 
-Publication through the supplied workflow is manual on purpose. A normal push runs tests, not that deployment. The hosting setting must also be **GitHub Actions**: a user-site repository configured for legacy branch publishing can separately auto-publish its README/source. That legacy behavior was observed after the first push and the source setting was corrected; see `VERIFICATION.md` for the remaining old-deployment cleanup. No personal access token, repository secret, or third-party deployment account is required: the official deployment action uses the workflow's narrowly scoped GitHub permissions and OIDC.
+Publication through the supplied workflow is manual on purpose. A normal push runs tests, not that deployment. The hosting setting must also be **GitHub Actions**: a user-site repository configured for legacy branch publishing can separately auto-publish its README/source. That legacy behavior was observed after the first push; the source setting was corrected and the old README deployment was replaced by the approved production build. See `PUBLICATION.md`. No personal access token, repository secret, or third-party deployment account is required: the official deployment action uses the workflow's narrowly scoped GitHub permissions and OIDC.
 
 After the first approved deployment, automatic updates can be enabled by adding a `push` trigger restricted to the default branch in `.github/workflows/pages.yml`. Keep the tests and deploy job dependency intact.
 

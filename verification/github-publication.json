@@ -25,5 +25,16 @@
       "message": "Deactivating GitHub pages for this repository is not allowed."
     }
   ],
-  "remainingGate": "Authenticated GitHub Pages UI Unpublish site, or explicitly approved intended-artifact deployment."
+  "remainingGate": "None for the requested GitHub Pages publication. Custom domain registration is separate.",
+  "resolution": {
+    "operatorApproval": "Publish the correct build",
+    "workflowRun": 40250774256,
+    "sourceCommit": "2a343a602ed84480ab99f92f5c92585a298030fa",
+    "status": "success",
+    "publicSite": "https://vrtcode.github.io/",
+    "intendedProductionManifestMatched": true,
+    "publicFilesByteMatched": 22,
+    "publicBrowserChecks": 20,
+    "legacyReadmeReplaced": true
+  }
 }

@@ -1,6 +1,6 @@
 # Verification record
 
-Date: 2026-10-26. Scope: local source migration and GitHub Pages project preparation. This record is not evidence of a deployed public website or registered custom domain.
+Date: 2026-10-26. Scope: source migration, project preparation, and the later explicitly approved GitHub Pages release. The pre-release checks below are supplemented by `PUBLICATION.md` and independent public receipts. No custom-domain registration is claimed.
 
 ## Source and visual fidelity
 
@@ -103,17 +103,17 @@ Fenrir source review was read-only. The actual PR diff, not only the default bra
 - Push/PR CI is read-only. The Pages publication workflow requires explicit manual dispatch.
 - The manual `Publish GitHub Pages` workflow was **not** dispatched. After the first source push, GitHub nevertheless ran its built-in **legacy Jekyll Pages deployment** from `main:/`, rendering the repository README instead of the portfolio build.
 - Independent Pages API and public HTTP checks confirmed that legacy deployment. The source was then changed to **GitHub Actions** (`build_type=workflow`) to stop branch-based auto-publication. Two attempts to deactivate the site through the Pages REST API returned HTTP 422 (“Deactivating GitHub pages for this repository is not allowed”).
-- The previous README deployment remains the last observed public result; do not describe the portfolio as live. Removing that deployment requires **Settings → Pages → site menu → Unpublish site** in an authenticated GitHub browser session, or an explicitly approved deployment of the intended artifact. The available in-app browser was not signed in; no credentials were read or inserted.
+- This was resolved after explicit owner approval to publish: manual workflow run **40250774256** deployed the intended production artifact from `2a343a602ed84480ab99f92f5c92585a298030fa`. Independent HTTP and browser checks confirmed the actual portfolio replaced the README. No separate unpublish step remains. See `PUBLICATION.md`.
 - Read-only CI passed for source revision `af8c751e54519dac925bc35689cf857f989b8926`: [Check static site](https://github.com/vrtcode/vrtcode.github.io/actions/runs/40250314527). The built-in legacy run is [40250311631](https://github.com/vrtcode/vrtcode.github.io/actions/runs/40250311631), not the manual publication workflow.
 - `vrt.is-a.dev` is an intended future domain, not registered/verified by this project. There is no CNAME file.
 - `_headers` is supplied only for compatible hosts. GitHub Pages does not apply it; HTML CSP remains the applicable local policy mechanism.
 
 ## Remaining release gates
 
-1. Confirm GitHub's read-only CI succeeds for the uploaded source revision (passed for `af8c751`; re-check after subsequent edits).
-2. GitHub Actions is now the Pages source. Remove the unintended old README deployment through the authenticated Pages UI, or manually run the intended publication workflow when publication is explicitly wanted.
-3. Verify the real public URL, direct case URLs, custom HTTP 404, fonts, canonical URLs, social image, sitemap, robots and navigation after deployment.
+1. **Closed:** source CI and the deployment workflow passed for the published revision; subsequent documentation edits run separate read-only CI.
+2. **Closed:** GitHub Actions is the Pages source and the owner-approved production workflow deployed successfully, replacing the unintended README site.
+3. **Closed:** public checks cover all ten pages, direct routes, real custom HTTP 404, fonts, canonical/social metadata, sitemap, robots, menu, and pointer attraction. The published manifest and 22 public-file hashes match the intended build.
 4. Check Safari/WebKit, a real mobile device and keyboard/screen-reader behavior before claiming broad browser/accessibility coverage. Measure performance separately.
 5. Apply for the domain manually under the current is-a.dev rules, then verify ownership/DNS/HTTPS and rebuild metadata against the actual public domain.
 
-Local passing tests do not close these public-hosting or domain gates.
+The independent public checks close the requested GitHub Pages publication gate. Broader browser/accessibility/performance coverage and custom-domain registration remain separate work.
