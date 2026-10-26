@@ -165,7 +165,7 @@ def head(title, description, route, origin, prefix, production, not_found):
              f'<meta property="og:description" content="{esc(description, quote=True)}">',
              f'<meta property="og:image" content="{esc(image, quote=True)}">',
              '<meta property="og:image:width" content="1200">', '<meta property="og:image:height" content="630">',
-             '<meta property="og:image:alt" content="vrt — security research and engineering">',
+             '<meta property="og:image:alt" content="vrt — code, traces, and no guesswork">',
              '<meta name="twitter:card" content="summary_large_image">',
              f'<meta name="twitter:image" content="{esc(image, quote=True)}">',
              f'<link rel="icon" href="{prefix}/assets/favicon.svg" type="image/svg+xml">',
@@ -194,13 +194,13 @@ def build(output, site_url=None, production=False, base_path=''):
     shutil.copytree(ROOT / 'assets', output / 'assets', dirs_exist_ok=True)
     for route, file, view, index in pages:
         ctx = dict(data, isHome=view == 'home', isCase=view == 'case', is404=view == '404', caseCount=f'{len(cases):02d}')
-        title = 'vrt — Mobile Security, Reverse Engineering & Backend'
-        description = 'The personal portfolio of vrt: mobile security, reverse engineering, backend development, and distributed systems reliability. Selected work and an evidence-driven approach.'
+        title = 'vrt — Under the hood. No guesswork.'
+        description = 'Mobile apps, native code, backend rabbit holes. I’m vrt — I follow the traces, test the hunch, and keep the receipts.'
         if index is not None:
             ctx.update(cs=cases[index], prev=cases[(index-1) % len(cases)], next=cases[(index+1) % len(cases)])
             title, description = cases[index]['title'] + ' — vrt', cases[index]['summary']
         elif view == '404':
-            title, description = 'Page not found — vrt', 'This page does not exist. Explore the portfolio and selected case studies.'
+            title, description = 'Wrong turn — vrt', 'That link took a wrong turn. Head back to home base or dig into a case.'
         result = head(title, description, route, origin, prefix, production, view == '404') + renderer.render(template, ctx) + '\n</body>\n</html>\n'
         if '{{' in result or '<sc-' in result or '<x-dc' in result:
             raise ValueError(f'Unresolved template in {file}')

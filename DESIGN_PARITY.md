@@ -8,6 +8,12 @@ Original SHA-256: `9b5b4f8965c9679e847055880e2c83992297f2220bd2041ccbe7e9d43292a
 
 The original file was not modified. The private design-support runtime is not included in this repository.
 
+## Later copy revision
+
+After the migration baseline, the owner requested conversational technical English across the public site. This revision changes text, not the visual/behavioral code: `src/base.css`, `src/enhancements.css`, and `assets/site.js` remain byte-identical to the baseline. The 14 SVG trees retain all 400 elements and their geometry, attributes and styles; 90 text nodes were intentionally rewritten. The journal `verification/copy-rewrite.json` records 64 template-text replacements and 173 data-string changes. Metadata and the social-preview copy were updated too.
+
+The exact-text and computed-style receipts below describe the original migration baseline, not a promise that rewritten text has identical line wraps. The source comparison now applies the explicit copy journal before checking the body; it still rejects unlisted markup/style changes. Current browser receipts cover the rewritten copy.
+
 ## Code conservation
 
 | Original source | Static implementation | Result |

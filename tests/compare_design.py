@@ -5,7 +5,7 @@ parser.add_argument('design',type=Path)
 args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[1]
 from html.parser import HTMLParser
-import re,json
+import re,json,html
 s=args.design.read_text();start=s.index('<header style="position:sticky');end=s.index('</header>',start)+9
 class P(HTMLParser):
  def __init__(self):super().__init__();self.items=[]
@@ -47,8 +47,16 @@ changes=[
 for old,new in changes:
  assert body.count(old)==1, 'Expected original template text was not found'
  body=body.replace(old,new)
-assert body.strip()+'\n'==(ROOT/'src/body.html').read_text(), 'Unlisted body-template difference'
+# Apply the operator-requested copy revision without allowing markup/style changes.
+journal=json.loads((ROOT/'verification/copy-rewrite.json').read_text())
+copy={e['old']:e['new'] for e in journal['templateText'] if e['file']=='src/body.html'}
+def rewrite_text(match):
+ raw=match[0];clean=html.unescape(raw.strip())
+ if clean not in copy:return raw
+ return raw[:len(raw)-len(raw.lstrip())]+html.escape(copy[clean],quote=False)+raw[len(raw.rstrip()):]
+body=re.sub(r'(?<=>)[^<>]+(?=<)',rewrite_text,body)
+assert body.strip()+'\n'==(ROOT/'src/body.html').read_text(), 'Unlisted body-template or markup/style difference'
 assert re.search(r'<style>([\s\S]*?)</style>',s)[1].strip()+'\n'==(ROOT/'src/base.css').read_text(), 'Original global CSS changed'
-print(json.dumps({'globalCss':'EXACT','bodyTemplate':'EXACT except explicit header/ref and three text/count changes',
+print(json.dumps({'globalCss':'EXACT','bodyTemplate':'EXACT markup/styles after explicit migration and conversational-copy changes',
  'headerElements':len(report),'headerDeclarations':sum(r['declarations_checked'] for r in report),
  'headerHover':'MATCH','originalShadowDeclarations':len(re.findall(r'(?:box|text)-shadow\s*:',s))},indent=2))

@@ -1,0 +1,674 @@
+[
+  {
+    "width": 360,
+    "route": "/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      },
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      },
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      },
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      },
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      },
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      },
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/android-integrity/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/realtime-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/worker-lifecycle/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/mobile-sdk-analysis/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/push-integration-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/network-observability/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "route": "/work/ios-attestation/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      },
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      },
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      },
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      },
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      },
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      },
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/android-integrity/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/realtime-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/worker-lifecycle/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/mobile-sdk-analysis/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/push-integration-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/network-observability/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/work/ios-attestation/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      },
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      },
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      },
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      },
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      },
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      },
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/android-integrity/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/realtime-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/worker-lifecycle/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/mobile-sdk-analysis/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/push-integration-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/network-observability/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "route": "/work/ios-attestation/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      },
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      },
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      },
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      },
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      },
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      },
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/android-integrity/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/realtime-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/worker-lifecycle/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/mobile-sdk-analysis/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/push-integration-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/network-observability/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 860,
+    "route": "/work/ios-attestation/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      },
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      },
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      },
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      },
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      },
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      },
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/android-integrity/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/realtime-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/worker-lifecycle/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/mobile-sdk-analysis/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/push-integration-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/network-observability/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/work/ios-attestation/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      },
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      },
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      },
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      },
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      },
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      },
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/android-integrity/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Real device vs. emulation",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/realtime-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Auth first, socket slot second",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/worker-lifecycle/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "A worker that knows how to quit",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/mobile-sdk-analysis/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Same-looking inputs, different traffic",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/push-integration-security/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Queued isn't a delivery receipt",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/network-observability/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "Find the layer, not a scapegoat",
+        "outside": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "route": "/work/ios-attestation/",
+    "overflow": false,
+    "diagrams": [
+      {
+        "title": "iOS attestation roles, not a magic stamp",
+        "outside": []
+      }
+    ]
+  }
+]

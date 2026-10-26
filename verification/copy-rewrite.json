@@ -1,0 +1,1757 @@
+{
+  "voice": "Conversational technical English with light developer slang; facts and evidence limits retained.",
+  "templateText": [
+    {
+      "file": "src/body.html",
+      "old": "Skip to content",
+      "new": "Jump to the good stuff"
+    },
+    {
+      "file": "src/body.html",
+      "old": "SECURITY RESEARCH & ENGINEERING",
+      "new": "CODE. TRACES. NO GUESSWORK."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Understand how the system",
+      "new": "Figure out what's"
+    },
+    {
+      "file": "src/body.html",
+      "old": "actually works.",
+      "new": "really going on."
+    },
+    {
+      "file": "src/body.html",
+      "old": "I'm vrt. I work across mobile security, reverse engineering, and backend development. I investigate application behavior, trace complex failures, and test solutions through reproducible experiments.",
+      "new": "I'm vrt. I dig into mobile apps, native code, and backends to figure out what's actually happening. Weird behavior? I follow the traces, test the hunch, and keep the receipts."
+    },
+    {
+      "file": "src/body.html",
+      "old": "From native code and network protocols to task queues and safe releases.",
+      "new": "Under the hood, across the wire, and all the way to a fix you can check."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Explore the work",
+      "new": "See what I dig into"
+    },
+    {
+      "file": "src/body.html",
+      "old": "fig. 1 — research flow",
+      "new": "fig. 1 — the game plan"
+    },
+    {
+      "file": "src/body.html",
+      "old": "5 stages",
+      "new": "5 moves"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Observe → hypothesize → experiment → verify.",
+      "new": "Look → question → test → check."
+    },
+    {
+      "file": "src/body.html",
+      "old": "01 / About",
+      "new": "01 / About me"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Where code, documentation, and behavior disagree.",
+      "new": "The docs say one thing. The code says, 'nah.'"
+    },
+    {
+      "file": "src/body.html",
+      "old": "I'm interested in systems where the code, documentation, and observed behavior don't quite agree. My work spans Android and iOS integrations, native code analysis, network protocols, and server-side logic. I connect research with engineering: investigate the cause, test a hypothesis, and turn the finding into a reproducible check or a focused change.",
+      "new": "That's the stuff I like digging into: Android and iOS integrations, native code, network protocols, and backend logic that doesn't quite match the story. I chase the cause, put the theory on trial, and turn what holds up into a repeatable check or a focused fix."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Reliability is another part of that work: worker lifecycles, task queues, access control, observability, and safe updates. A successful build, a passing local test, and verified behavior in an external environment are different kinds of evidence. I aim to make clear what has been established and what remains a hypothesis.",
+      "new": "I also work on the less flashy bits that keep systems from falling over: queues, worker shutdowns, access checks, logs, and safe rollouts. A green build isn't a victory lap. Neither is one passing test. I keep 'we checked this' separate from 'that's our best guess.'"
+    },
+    {
+      "file": "src/body.html",
+      "old": "02 / Focus",
+      "new": "02 / My lanes"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Four areas of practical work",
+      "new": "Where I get my hands dirty"
+    },
+    {
+      "file": "src/body.html",
+      "old": "03 / Work",
+      "new": "03 / The work"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Selected case studies",
+      "new": "A few trips down the rabbit hole"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Anonymized write-ups of past work. Source code for these projects is private; identifiers and infrastructure details have been removed.",
+      "new": "Real work, with the private bits stripped out. The code stays private; names, identifiers, and infrastructure details don't make the cut."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Read case",
+      "new": "Dig into it"
+    },
+    {
+      "file": "src/body.html",
+      "old": "04 / Approach",
+      "new": "04 / My playbook"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Evidence over confidence.",
+      "new": "No hype. Just receipts."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Five working rules, applied to research and engineering alike.",
+      "new": "Five rules I stick to, whether I'm poking at a binary or fixing a backend."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Verification layers — what each one can and cannot prove",
+      "new": "What each check buys you — and what it doesn't"
+    },
+    {
+      "file": "src/body.html",
+      "old": "shows",
+      "new": "backs up"
+    },
+    {
+      "file": "src/body.html",
+      "old": "misses",
+      "new": "can't tell you"
+    },
+    {
+      "file": "src/body.html",
+      "old": "05 / Tools",
+      "new": "05 / The gear"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Project tools and technologies",
+      "new": "The stack behind the digging"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Tools used across research and engineering projects.",
+      "new": "Tools I've used on the job. Not a wall of skill bars."
+    },
+    {
+      "file": "src/body.html",
+      "old": "06 / Contact",
+      "new": "06 / Say hey"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Let's discuss how it works.",
+      "new": "Got something weird under the hood?"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Interested in mobile security, reverse engineering, and reliable systems? You can find my public profile on GitHub or reach me on Telegram.",
+      "new": "Into mobile security, reverse engineering, or systems that don't fall over? Check out my GitHub or drop me a line on Telegram."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Work",
+      "new": "The work"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Topics",
+      "new": "What's involved"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Source",
+      "new": "Behind the scenes"
+    },
+    {
+      "file": "src/body.html",
+      "old": "{{ cs.source }}; no public code or report",
+      "new": "{{ cs.source }}; code and raw reports stay private"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Environment",
+      "new": "The sandbox"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Owned or explicitly authorized",
+      "new": "My own systems, or explicit permission"
+    },
+    {
+      "file": "src/body.html",
+      "old": "fig. — simplified flow; hosts, endpoints, and identifiers removed",
+      "new": "fig. — the short version; hosts, endpoints, and IDs left out"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Context",
+      "new": "The setup"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Approach",
+      "new": "The game plan"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Engineering focus",
+      "new": "What mattered"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Evidence",
+      "new": "Show the receipts"
+    },
+    {
+      "file": "src/body.html",
+      "old": "Implementation notes, engineering principles, and open questions.",
+      "new": "What's in the code, what's a rule of thumb, and what's still an open question."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Disclosure boundary",
+      "new": "What stays private"
+    },
+    {
+      "file": "src/body.html",
+      "old": "← previous · case {{ prev.num }}",
+      "new": "← back one · case {{ prev.num }}"
+    },
+    {
+      "file": "src/body.html",
+      "old": "next · case {{ next.num }} →",
+      "new": "up next · case {{ next.num }} →"
+    },
+    {
+      "file": "src/body.html",
+      "old": "404 · not found",
+      "new": "404 · wrong turn"
+    },
+    {
+      "file": "src/body.html",
+      "old": "No page at this address.",
+      "new": "Looks like a dead end."
+    },
+    {
+      "file": "src/body.html",
+      "old": "The link may be outdated or mistyped. Every case study is listed here.",
+      "new": "That link took a wrong turn. The work's still here — pick a case below."
+    },
+    {
+      "file": "src/body.html",
+      "old": "Go to the home page",
+      "new": "Back to home base"
+    },
+    {
+      "file": "src/body.html",
+      "old": "vrt · personal research & engineering",
+      "new": "vrt · code, traces & rabbit holes"
+    },
+    {
+      "file": "src/body.html",
+      "old": "This website covers software development and authorized research. Confidential data and operational details of private projects are not published.",
+      "new": "I build things and research systems I own or have permission to test. Private data, secrets, and operational details stay off this site."
+    },
+    {
+      "file": "src/header.html",
+      "old": "About",
+      "new": "About me"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Focus",
+      "new": "My lanes"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Work",
+      "new": "The work"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Approach",
+      "new": "My playbook"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Contact",
+      "new": "Say hey"
+    },
+    {
+      "file": "src/header.html",
+      "old": "(opens in a new tab)",
+      "new": "(opens a new tab)"
+    },
+    {
+      "file": "src/header.html",
+      "old": "About",
+      "new": "About me"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Focus",
+      "new": "My lanes"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Work",
+      "new": "The work"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Approach",
+      "new": "My playbook"
+    },
+    {
+      "file": "src/header.html",
+      "old": "Contact",
+      "new": "Say hey"
+    }
+  ],
+  "baselineCommit": "a84b92aaf76bda4e1794b7ad2def414c0e27bfab",
+  "contentText": [
+    {
+      "path": "content.navItems[0].label",
+      "old": "About",
+      "new": "About me"
+    },
+    {
+      "path": "content.navItems[1].label",
+      "old": "Focus",
+      "new": "My lanes"
+    },
+    {
+      "path": "content.navItems[2].label",
+      "old": "Work",
+      "new": "The work"
+    },
+    {
+      "path": "content.navItems[3].label",
+      "old": "Approach",
+      "new": "My playbook"
+    },
+    {
+      "path": "content.navItems[4].label",
+      "old": "Contact",
+      "new": "Say hey"
+    },
+    {
+      "path": "content.flow[0].desc",
+      "old": "Observe behavior on real hardware or a controlled emulator",
+      "new": "Start with real hardware or a controlled emulator"
+    },
+    {
+      "path": "content.flow[1].desc",
+      "old": "Capture calls, traffic, and native execution paths",
+      "new": "Follow the calls, traffic, and native-code trail"
+    },
+    {
+      "path": "content.flow[2].label",
+      "old": "analysis",
+      "new": "make sense"
+    },
+    {
+      "path": "content.flow[2].desc",
+      "old": "Reduce traces to a model of what the system does",
+      "new": "Work out what the traces are actually telling you"
+    },
+    {
+      "path": "content.flow[3].desc",
+      "old": "Turn the model into a reproducible check",
+      "new": "Turn the hunch into a check you can run again"
+    },
+    {
+      "path": "content.flow[4].label",
+      "old": "verification",
+      "new": "check"
+    },
+    {
+      "path": "content.flow[4].desc",
+      "old": "Confirm the result at the layer that matters",
+      "new": "Check the result where the decision really happens"
+    },
+    {
+      "path": "content.focus[0].title",
+      "old": "Mobile security & reverse engineering",
+      "new": "Mobile apps, under the hood"
+    },
+    {
+      "path": "content.focus[0].body",
+      "old": "I investigate Android APK, DEX, JNI, and native execution through tracing, emulation, and network analysis. I compare evidence from devices, tools, and backend systems rather than treating a few matching signals as proof of full compatibility.",
+      "new": "I dig through Android APKs, DEX, JNI, and native code with traces, emulation, and traffic captures. A few matching signals don't mean two environments behave the same — I line up device, tool, and backend evidence before calling it."
+    },
+    {
+      "path": "content.focus[1].title",
+      "old": "Application security & backend",
+      "new": "Backends with real boundaries"
+    },
+    {
+      "path": "content.focus[1].body",
+      "old": "I work with APIs, realtime connections, and access boundaries. I check not only whether authentication exists, but when it happens: before reading data, returning results, or allocating limited resources. Changes are paired with negative scenarios and regression tests.",
+      "new": "APIs, WebSockets, and access checks are my kind of plumbing. Auth needs to happen before data goes out or limited resources get claimed. I test the 'nope' paths too, not just the happy path."
+    },
+    {
+      "path": "content.focus[2].title",
+      "old": "Distributed workers & reliability",
+      "new": "Workers that don't leave a mess"
+    },
+    {
+      "path": "content.focus[2].body",
+      "old": "I investigate task queues, concurrent processing, worker shutdown, and recovery of unfinished work. My focus includes task ownership, error classification, and safe updates across multiple service instances.",
+      "new": "Queues, concurrent jobs, shutdowns, and unfinished work: the bits that get messy when a worker quits. I focus on who owns each task, what actually failed, and how to roll out changes without chaos."
+    },
+    {
+      "path": "content.focus[3].title",
+      "old": "Infrastructure & observability",
+      "new": "Infra without the guesswork"
+    },
+    {
+      "path": "content.focus[3].body",
+      "old": "I work with Linux infrastructure, containers, OpenWrt, and network diagnostics. I test hypotheses against configuration, logs, metrics, and independent requests, separating routing problems from TLS, application, and external-service failures.",
+      "new": "Linux, containers, OpenWrt, and network rabbit holes. I check the config that's really active, then compare logs, metrics, and control requests. Routing, TLS, the app, and an external service are different suspects."
+    },
+    {
+      "path": "content.cases[0].title",
+      "old": "Android integrity research: devices, native code, and emulation",
+      "new": "Android integrity: under the hood"
+    },
+    {
+      "path": "content.cases[0].topics[3]",
+      "old": "Protocol analysis",
+      "new": "Protocol deep dives"
+    },
+    {
+      "path": "content.cases[0].nodes[0].label",
+      "old": "device",
+      "new": "real device"
+    },
+    {
+      "path": "content.cases[0].nodes[3].label",
+      "old": "server verifier",
+      "new": "server check"
+    },
+    {
+      "path": "content.cases[0].source",
+      "old": "Private laboratory research",
+      "new": "Private lab work"
+    },
+    {
+      "path": "content.cases[0].summary",
+      "old": "A research environment for comparing native execution on Android devices and in emulation, analyzing protocol behavior, and checking server-side verification boundaries.",
+      "new": "Real devices on one side, emulation on the other. I trace the native code, line up the inputs, and check where the two stories stop matching."
+    },
+    {
+      "path": "content.cases[0].context",
+      "old": "I investigate the interaction between Android applications, native components, and backend verification in integrity and attestation flows. A central challenge is establishing which observations belong to the same execution and where device behavior diverges from emulation.",
+      "new": "I dig into how Android apps, native components, and backend verification fit together in integrity and attestation flows. The tricky bit is making sure the evidence belongs to the same run before blaming the device or the emulator."
+    },
+    {
+      "path": "content.cases[0].approach",
+      "old": "Align application builds, versions, profiles, and inputs; analyze Java, JNI, and native transitions; examine traces and network artifacts; and test how results propagate through worker and backend contracts.",
+      "new": "Match the app build, version, profile, and inputs first. Then follow Java-to-JNI-to-native transitions, inspect traces and traffic, and check what makes it through the worker and backend contracts."
+    },
+    {
+      "path": "content.cases[0].focus",
+      "old": "Reproducible experiments, isolated diagnostic modes, and a clear distinction between local output and the response from the intended server-side verifier.",
+      "new": "Repeatable runs, isolated diagnostics, and no mixing up 'the client produced output' with 'the intended server verifier accepted it.'"
+    },
+    {
+      "path": "content.cases[0].disclosureNote",
+      "old": "Private laboratory research. Sensitive artifacts are not published. This page does not claim a Play Integrity bypass, an accepted official verdict, or complete equivalence between emulation and a physical device.",
+      "new": "Private lab work. Sensitive artifacts stay private: no Play Integrity bypass claim, no accepted official verdict, and no claim that emulation fully matches a real device."
+    },
+    {
+      "path": "content.cases[0].diagramLabel",
+      "old": "Simplified flow: device, then JNI / native, then emulation, then server verifier",
+      "new": "The short version: real device, then JNI / native, then emulation, then server check"
+    },
+    {
+      "path": "content.cases[0].linkLabel",
+      "old": "Read case study: Android integrity research: devices, native code, and emulation",
+      "new": "Dig into it: Android integrity: under the hood"
+    },
+    {
+      "path": "content.cases[0].topicsText",
+      "old": "Android · JNI · unidbg · Protocol analysis",
+      "new": "Android · JNI · unidbg · Protocol deep dives"
+    },
+    {
+      "path": "content.cases[0].evidenceList[0].text",
+      "old": "Device and emulation runs can be aligned on build, version, profile, and inputs before their outputs are compared.",
+      "new": "Match the build, version, profile, and inputs before comparing a device run with an emulated one."
+    },
+    {
+      "path": "content.cases[0].evidenceList[0].label",
+      "old": "Principle",
+      "new": "Rule of thumb"
+    },
+    {
+      "path": "content.cases[0].evidenceList[1].text",
+      "old": "Remaining differences between the two lanes come from the execution environment rather than from mismatched inputs.",
+      "new": "Maybe the leftover differences come from the execution environment, not mismatched inputs. That's the working theory, not a settled result."
+    },
+    {
+      "path": "content.cases[0].evidenceList[1].label",
+      "old": "Hypothesis",
+      "new": "Working theory"
+    },
+    {
+      "path": "content.cases[0].evidenceList[2].text",
+      "old": "No accepted official verdict and no full equivalence between emulation and a physical device is claimed.",
+      "new": "No accepted official verdict is claimed, and emulation isn't presented as a drop-in match for a real device."
+    },
+    {
+      "path": "content.cases[0].evidenceList[2].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[1].title",
+      "old": "Securing realtime connections",
+      "new": "WebSockets: auth before anything else"
+    },
+    {
+      "path": "content.cases[1].topics[1]",
+      "old": "Authentication",
+      "new": "Auth boundaries"
+    },
+    {
+      "path": "content.cases[1].nodes[1].label",
+      "old": "authenticate",
+      "new": "auth check"
+    },
+    {
+      "path": "content.cases[1].nodes[2].label",
+      "old": "register connection",
+      "new": "claim a slot"
+    },
+    {
+      "path": "content.cases[1].source",
+      "old": "Private source",
+      "new": "Private code"
+    },
+    {
+      "path": "content.cases[1].summary",
+      "old": "Authentication design for a realtime channel, covering client/server coordination, negative scenarios, and protection of limited connection resources.",
+      "new": "A realtime channel needs more than 'the socket connected.' I worked on auth, client/server coordination, failure paths, and keeping connection slots out of the wrong hands."
+    },
+    {
+      "path": "content.cases[1].context",
+      "old": "Protecting ordinary HTTP requests is not enough for a realtime interface. The connection itself needs a verifiable relationship to the correct session and predictable access-denial behavior.",
+      "new": "Locking down HTTP routes doesn't magically lock down a realtime connection. The socket still needs to belong to the right session, and rejected connections need a clean way out."
+    },
+    {
+      "path": "content.cases[1].approach",
+      "old": "Align the client and server protocol, authenticate before registering a connection, keep sensitive values out of URLs, and test invalid or missing credentials alongside reconnect behavior.",
+      "new": "Get the client and server speaking the same protocol. Authenticate before registering the socket, keep sensitive values out of URLs, and test missing or bad credentials as well as reconnects."
+    },
+    {
+      "path": "content.cases[1].focus",
+      "old": "Verify the access boundary independently of business logic. An authentication failure should not become an endless retry loop or consume another user's connection capacity.",
+      "new": "Check the access boundary on its own. A failed login check shouldn't turn into endless retries or eat somebody else's connection capacity."
+    },
+    {
+      "path": "content.cases[1].disclosureNote",
+      "old": "An anonymized account of engineering work. Service addresses, identifiers, specific findings, and the system's operational state are not disclosed.",
+      "new": "An anonymized look at private engineering work. No service addresses, identifiers, specific findings, or claim about how the live system is doing right now."
+    },
+    {
+      "path": "content.cases[1].diagramLabel",
+      "old": "Simplified flow: client, then authenticate, then register connection, then session",
+      "new": "The short version: client, then auth check, then claim a slot, then session"
+    },
+    {
+      "path": "content.cases[1].linkLabel",
+      "old": "Read case study: Securing realtime connections",
+      "new": "Dig into it: WebSockets: auth before anything else"
+    },
+    {
+      "path": "content.cases[1].topicsText",
+      "old": "WebSocket · Authentication · Python · TypeScript",
+      "new": "WebSocket · Auth boundaries · Python · TypeScript"
+    },
+    {
+      "path": "content.cases[1].evidenceList[0].text",
+      "old": "Authentication runs before a connection is registered.",
+      "new": "Auth runs before the connection gets registered."
+    },
+    {
+      "path": "content.cases[1].evidenceList[0].label",
+      "old": "Implementation",
+      "new": "In the code"
+    },
+    {
+      "path": "content.cases[1].evidenceList[1].text",
+      "old": "Invalid and missing credentials are covered by negative tests alongside reconnect behavior.",
+      "new": "Missing credentials, bad credentials, and reconnects get negative and regression tests."
+    },
+    {
+      "path": "content.cases[1].evidenceList[1].label",
+      "old": "Implementation",
+      "new": "In the code"
+    },
+    {
+      "path": "content.cases[1].evidenceList[2].text",
+      "old": "The current operational state of the system is not described.",
+      "new": "This isn't a live-status report for the system."
+    },
+    {
+      "path": "content.cases[1].evidenceList[2].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[2].title",
+      "old": "Predictable shutdown for distributed workers",
+      "new": "Workers that know when to quit"
+    },
+    {
+      "path": "content.cases[2].nodes[3].label",
+      "old": "return owned tasks",
+      "new": "hand back owned tasks"
+    },
+    {
+      "path": "content.cases[2].source",
+      "old": "Private source",
+      "new": "Private code"
+    },
+    {
+      "path": "content.cases[2].summary",
+      "old": "Work on graceful shutdown, draining active operations, and safely returning unfinished tasks when a worker stops.",
+      "new": "A worker shouldn't drop a mess on its way out. This work covers graceful shutdown, a bounded drain, and handing back only the unfinished tasks that worker owns."
+    },
+    {
+      "path": "content.cases[2].context",
+      "old": "Process shutdown is a normal part of a system's lifecycle. If a worker keeps accepting tasks or cannot distinguish task ownership, an update can leave work stuck or handled incorrectly.",
+      "new": "Workers stop. Updates happen. The trouble starts when a worker keeps grabbing jobs or loses track of task ownership during shutdown. That's how work gets stuck or handled twice."
+    },
+    {
+      "path": "content.cases[2].approach",
+      "old": "Stop accepting new work, allow active operations a bounded drain period, and conditionally update only tasks owned by that worker instance. Check repeated signals and transport failures separately.",
+      "new": "Stop intake, give active work a deadline, then conditionally update only tasks owned by that worker instance. Repeated signals and transport failures get their own checks."
+    },
+    {
+      "path": "content.cases[2].focus",
+      "old": "Observable shutdown behavior, regression coverage, and consistency between source code and running instances, rather than a green build alone.",
+      "new": "A shutdown you can observe and test, plus checks that the running instances match the source. A green build on its own doesn't cut it."
+    },
+    {
+      "path": "content.cases[2].disclosureNote",
+      "old": "This case describes engineering principles. Infrastructure size, traffic figures, configuration, and current deployment status are not published.",
+      "new": "The engineering story, not the fleet's inside scoop. No infrastructure size, traffic numbers, private config, or current deployment claim."
+    },
+    {
+      "path": "content.cases[2].diagramLabel",
+      "old": "Simplified flow: signal, then stop intake, then bounded drain, then return owned tasks",
+      "new": "The short version: signal, then stop intake, then bounded drain, then hand back owned tasks"
+    },
+    {
+      "path": "content.cases[2].linkLabel",
+      "old": "Read case study: Predictable shutdown for distributed workers",
+      "new": "Dig into it: Workers that know when to quit"
+    },
+    {
+      "path": "content.cases[2].evidenceList[0].text",
+      "old": "Shutdown stops intake, drains within a bound, and updates only tasks owned by that worker instance.",
+      "new": "Shutdown stops intake, drains within a deadline, and touches only tasks owned by that worker instance."
+    },
+    {
+      "path": "content.cases[2].evidenceList[0].label",
+      "old": "Implementation",
+      "new": "In the code"
+    },
+    {
+      "path": "content.cases[2].evidenceList[1].text",
+      "old": "Current deployment status and parity of running instances are not asserted on this page.",
+      "new": "This page doesn't certify what's deployed right now or whether every running instance matches."
+    },
+    {
+      "path": "content.cases[2].evidenceList[1].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[3].title",
+      "old": "Mobile SDK and protocol research",
+      "new": "Mobile SDKs: same request, different story"
+    },
+    {
+      "path": "content.cases[3].topics[2]",
+      "old": "SDK compatibility",
+      "new": "SDK quirks"
+    },
+    {
+      "path": "content.cases[3].topics[3]",
+      "old": "Traffic analysis",
+      "new": "Traffic deep dives"
+    },
+    {
+      "path": "content.cases[3].nodes[2].label",
+      "old": "network exchange",
+      "new": "traffic"
+    },
+    {
+      "path": "content.cases[3].nodes[3].label",
+      "old": "integration contract",
+      "new": "integration rules"
+    },
+    {
+      "path": "content.cases[3].source",
+      "old": "Private laboratory research",
+      "new": "Private lab work"
+    },
+    {
+      "path": "content.cases[3].summary",
+      "old": "Research into mobile SDK behavior across application versions, launch contexts, network exchanges, and integration contracts.",
+      "new": "Same-looking requests, different outcomes. I dig into SDK versions, app builds, launch state, and traffic to work out what changed under the hood."
+    },
+    {
+      "path": "content.cases[3].context",
+      "old": "Requests that look alike can behave differently when the SDK, application, platform, or installation context changes. A version listed in documentation is not a substitute for examining a specific build.",
+      "new": "Swap an SDK, app build, platform, or install context and a familiar request can behave differently. A version number in the docs isn't enough — the specific build gets a look."
+    },
+    {
+      "path": "content.cases[3].approach",
+      "old": "Analyze application packages and integration code, compare network exchanges and version behavior, establish input provenance, and distinguish static conclusions from runtime observations.",
+      "new": "Inspect app packages and integration code, compare traffic and version behavior, and track where the inputs came from. Keep 'the code suggests this' separate from 'we watched it happen.'"
+    },
+    {
+      "path": "content.cases[3].focus",
+      "old": "Do not generalize from one application or version without a new experiment. Structural protocol similarity is not proof of end-to-end compatibility with an external service.",
+      "new": "One build doesn't speak for every build. Similar protocol structure isn't proof that the whole flow works with an external service."
+    },
+    {
+      "path": "content.cases[3].disclosureNote",
+      "old": "Laboratory work in owned or explicitly authorized environments. Private traces and requests are not published, and access to third-party systems is not offered.",
+      "new": "Lab work on systems I own or have explicit permission to test. Private traces and requests stay private. Access to third-party systems isn't on offer."
+    },
+    {
+      "path": "content.cases[3].diagramLabel",
+      "old": "Simplified flow: app build, then SDK, then network exchange, then integration contract",
+      "new": "The short version: app build, then SDK, then traffic, then integration rules"
+    },
+    {
+      "path": "content.cases[3].linkLabel",
+      "old": "Read case study: Mobile SDK and protocol research",
+      "new": "Dig into it: Mobile SDKs: same request, different story"
+    },
+    {
+      "path": "content.cases[3].topicsText",
+      "old": "Android · iOS · SDK compatibility · Traffic analysis",
+      "new": "Android · iOS · SDK quirks · Traffic deep dives"
+    },
+    {
+      "path": "content.cases[3].evidenceList[0].text",
+      "old": "Similar-looking requests can differ when the SDK, application, platform, or installation context changes.",
+      "new": "A different SDK, app, platform, or install context can change the outcome of a similar-looking request."
+    },
+    {
+      "path": "content.cases[3].evidenceList[0].label",
+      "old": "Principle",
+      "new": "Rule of thumb"
+    },
+    {
+      "path": "content.cases[3].evidenceList[1].text",
+      "old": "Behavior observed in one build carries over to other versions — treated as untested until a new experiment.",
+      "new": "Does one build's behavior carry over to the next? Maybe. It stays untested until there's a new experiment."
+    },
+    {
+      "path": "content.cases[3].evidenceList[1].label",
+      "old": "Hypothesis",
+      "new": "Working theory"
+    },
+    {
+      "path": "content.cases[3].evidenceList[2].text",
+      "old": "Structural protocol similarity is not presented as end-to-end compatibility with an external service.",
+      "new": "Matching request shapes aren't a compatibility stamp for the full external-service flow."
+    },
+    {
+      "path": "content.cases[3].evidenceList[2].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[4].title",
+      "old": "Security of asynchronous push integrations",
+      "new": "Push pipelines: queued isn't delivered"
+    },
+    {
+      "path": "content.cases[4].source",
+      "old": "Private source",
+      "new": "Private code"
+    },
+    {
+      "path": "content.cases[4].summary",
+      "old": "Analysis of boundaries between APIs, queues, workers, and external push providers: result access, transport errors, and consistent task state.",
+      "new": "API → queue → worker → push provider. I check the handoffs, result access, transport failures, and task state — without calling 'queued' a delivery receipt."
+    },
+    {
+      "path": "content.cases[4].context",
+      "old": "Accepting an asynchronous task does not establish that it was executed or delivered. Results and status endpoints need access checks just as carefully as the original request.",
+      "new": "Taking a job doesn't mean the job ran, and running it doesn't mean the push arrived. Status and result endpoints need access checks too; they aren't a free pass around the original request."
+    },
+    {
+      "path": "content.cases[4].approach",
+      "old": "Examine API and background-processing paths, result ownership, caching behavior, and transport errors. Separate internal task status from evidence supplied by the external provider.",
+      "new": "Follow the API and background paths. Check who owns the result, what gets cached, and how transport failures show up. Internal task state and a provider's evidence are different things."
+    },
+    {
+      "path": "content.cases[4].focus",
+      "old": "Safe result handling and accurate interpretation of status, without delivery promises that the provider has not confirmed.",
+      "new": "Keep results in the right hands and read statuses for what they actually mean. No delivery promises the provider hasn't backed up."
+    },
+    {
+      "path": "content.cases[4].disclosureNote",
+      "old": "An anonymized overview of the work, not a public vulnerability disclosure or a claim that every historical finding has been remediated.",
+      "new": "An anonymized overview, not a public vulnerability write-up or a claim that every historical finding is fixed."
+    },
+    {
+      "path": "content.cases[4].diagramLabel",
+      "old": "Simplified flow: API, then queue, then worker, then push provider",
+      "new": "The short version: API, then queue, then worker, then push provider"
+    },
+    {
+      "path": "content.cases[4].linkLabel",
+      "old": "Read case study: Security of asynchronous push integrations",
+      "new": "Dig into it: Push pipelines: queued isn't delivered"
+    },
+    {
+      "path": "content.cases[4].evidenceList[0].text",
+      "old": "Accepting an asynchronous task does not establish that it was executed or delivered.",
+      "new": "A job getting accepted doesn't prove it ran or got delivered."
+    },
+    {
+      "path": "content.cases[4].evidenceList[0].label",
+      "old": "Principle",
+      "new": "Rule of thumb"
+    },
+    {
+      "path": "content.cases[4].evidenceList[1].text",
+      "old": "Result and status endpoints need their own access checks.",
+      "new": "Status and result endpoints need their own access checks. No shortcuts."
+    },
+    {
+      "path": "content.cases[4].evidenceList[1].label",
+      "old": "Principle",
+      "new": "Rule of thumb"
+    },
+    {
+      "path": "content.cases[4].evidenceList[2].text",
+      "old": "Not a vulnerability disclosure; remediation of every historical finding is not claimed.",
+      "new": "This isn't a vulnerability disclosure or an 'everything is fixed' claim."
+    },
+    {
+      "path": "content.cases[4].evidenceList[2].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[5].title",
+      "old": "Network diagnostics and observability",
+      "new": "Network debugging: one layer at a time"
+    },
+    {
+      "path": "content.cases[5].topics[3]",
+      "old": "Observability",
+      "new": "Logs & metrics"
+    },
+    {
+      "path": "content.cases[5].source",
+      "old": "Owned infrastructure",
+      "new": "My own infra"
+    },
+    {
+      "path": "content.cases[5].summary",
+      "old": "Layered network diagnostics across routing, DNS, TLS, HTTP, and application behavior, rather than conclusions drawn from one availability signal.",
+      "new": "Routing, DNS, TLS, HTTP, then the app. I check each layer instead of letting one green health check call the whole thing healthy."
+    },
+    {
+      "path": "content.cases[5].context",
+      "old": "A website error does not necessarily mean a route is broken. A successful health check does not establish that a particular user workflow works.",
+      "new": "A broken page doesn't automatically mean a broken route. And a happy health check doesn't prove the user's actual workflow works. Different signals, different questions."
+    },
+    {
+      "path": "content.cases[5].approach",
+      "old": "Inspect effective configuration, run control requests, examine logs and metrics, compare alternative hypotheses, and use reversible experiments without unnecessarily changing healthy components.",
+      "new": "Read the config that's active, run control requests, and compare logs and metrics against the competing theories. Keep experiments reversible; don't break the healthy bits just to test a hunch."
+    },
+    {
+      "path": "content.cases[5].focus",
+      "old": "Causality, control scenarios, and the distinction between network reachability, a service response, and a functioning application workflow.",
+      "new": "Find the cause, keep a control case, and separate 'we can reach it' from 'it responds' from 'the app actually works.'"
+    },
+    {
+      "path": "content.cases[5].disclosureNote",
+      "old": "Internal routes, addresses, and access details are not published. This website does not provide proxy or VPN services.",
+      "new": "Internal routes, addresses, and access details stay private. This is a portfolio, not a proxy or VPN service."
+    },
+    {
+      "path": "content.cases[5].diagramLabel",
+      "old": "Simplified flow: routing, then DNS, then TLS, then HTTP, then application",
+      "new": "The short version: routing, then DNS, then TLS, then HTTP, then application"
+    },
+    {
+      "path": "content.cases[5].linkLabel",
+      "old": "Read case study: Network diagnostics and observability",
+      "new": "Dig into it: Network debugging: one layer at a time"
+    },
+    {
+      "path": "content.cases[5].topicsText",
+      "old": "Linux · OpenWrt · DNS/TLS · Observability",
+      "new": "Linux · OpenWrt · DNS/TLS · Logs & metrics"
+    },
+    {
+      "path": "content.cases[5].evidenceList[0].text",
+      "old": "Network reachability, a service response, and a working user workflow are separate observations.",
+      "new": "'Reachable,' 'responding,' and 'the user flow works' are three different checks."
+    },
+    {
+      "path": "content.cases[5].evidenceList[0].label",
+      "old": "Principle",
+      "new": "Rule of thumb"
+    },
+    {
+      "path": "content.cases[5].evidenceList[1].text",
+      "old": "Internal routes, addresses, and topology are out of scope for this page.",
+      "new": "Private routes, addresses, and topology aren't part of the public story."
+    },
+    {
+      "path": "content.cases[5].evidenceList[1].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[6].title",
+      "old": "iOS platform and hardware-backed attestation research",
+      "new": "iOS attestation: claims vs. receipts"
+    },
+    {
+      "path": "content.cases[6].topics[3]",
+      "old": "Protocol analysis",
+      "new": "Protocol deep dives"
+    },
+    {
+      "path": "content.cases[6].source",
+      "old": "Private laboratory research",
+      "new": "Private lab work"
+    },
+    {
+      "path": "content.cases[6].summary",
+      "old": "Study of how iOS hardware-backed key attestation, app attestation, and device-boot behavior work, on owned or explicitly authorized hardware.",
+      "new": "A look under the hood of iOS attestation APIs, hardware-backed keys, and boot behavior — on hardware I own or have explicit permission to research."
+    },
+    {
+      "path": "content.cases[6].context",
+      "old": "This work examines iOS attestation-related APIs and platform behavior. The aim is to separate client assertions, hardware-backed operations, and server-side checks, without treating application-level observations as proof of secure hardware properties.",
+      "new": "I look at iOS attestation-related APIs and platform behavior without treating every client observation as proof of what the hardware guarantees. Client claims, hardware-backed operations, and server checks each get their own lane."
+    },
+    {
+      "path": "content.cases[6].approach",
+      "old": "Read platform behavior and framework interfaces, observe the network exchanges that carry attestation material, and align observations across operating-system versions and launch contexts. Treat a documented behavior as a starting point, not a substitute for examining a specific build.",
+      "new": "Read the framework interfaces, watch the exchanges that carry attestation material, and compare OS versions and launch states. The docs are a starting point; the specific build still needs checking."
+    },
+    {
+      "path": "content.cases[6].focus",
+      "old": "Describe the mechanism and its boundaries precisely. Distinguish what the secure enclave establishes from what the surrounding application claims, and mark clearly where a conclusion is an observation rather than a confirmed property.",
+      "new": "Be precise about who proves what. Separate the Secure Enclave's role from the app's claims, and label an observation as an observation — not a guaranteed platform property."
+    },
+    {
+      "path": "content.cases[6].disclosureNote",
+      "old": "Private laboratory research on owned or explicitly authorized hardware. Sensitive artifacts and device identifiers are not published. This work studies platform behavior; it does not claim an attestation bypass or an accepted server-side result.",
+      "new": "Private lab work on owned or explicitly authorized hardware. Sensitive artifacts and device IDs stay private: no attestation bypass and no accepted server-side result are claimed."
+    },
+    {
+      "path": "content.cases[6].diagramLabel",
+      "old": "Simplified flow: ",
+      "new": "Conceptual iOS attestation roles, not a literal API sequence"
+    },
+    {
+      "path": "content.cases[6].linkLabel",
+      "old": "Read case study: iOS platform and hardware-backed attestation research",
+      "new": "Dig into it: iOS attestation: claims vs. receipts"
+    },
+    {
+      "path": "content.cases[6].topicsText",
+      "old": "iOS · Secure Enclave · Attestation · Protocol analysis",
+      "new": "iOS · Secure Enclave · Attestation · Protocol deep dives"
+    },
+    {
+      "path": "content.cases[6].evidenceList[0].text",
+      "old": "Attestation material is carried in network exchanges that can be observed on owned hardware.",
+      "new": "On owned hardware, the network exchanges carrying attestation material can be observed."
+    },
+    {
+      "path": "content.cases[6].evidenceList[0].label",
+      "old": "Principle",
+      "new": "Rule of thumb"
+    },
+    {
+      "path": "content.cases[6].evidenceList[1].text",
+      "old": "Observed platform behavior holds across operating-system versions and launch contexts — not confirmed for each build.",
+      "new": "Does the same behavior hold across OS versions and launch states? That's still a theory until each build gets checked."
+    },
+    {
+      "path": "content.cases[6].evidenceList[1].label",
+      "old": "Hypothesis",
+      "new": "Working theory"
+    },
+    {
+      "path": "content.cases[6].evidenceList[2].text",
+      "old": "No claim to defeat, bypass, or pass App Attest, DeviceCheck, or any platform attestation.",
+      "new": "No claim to bypass or pass App Attest, DeviceCheck, or any platform attestation."
+    },
+    {
+      "path": "content.cases[6].evidenceList[2].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.cases[6].evidenceList[3].text",
+      "old": "Boot-level and hardware-level behavior remains an open area of study.",
+      "new": "Boot-level and hardware-level behavior still has open questions. No solved-it badge here."
+    },
+    {
+      "path": "content.cases[6].evidenceList[3].label",
+      "old": "Limitation",
+      "new": "The catch"
+    },
+    {
+      "path": "content.steps[0].title",
+      "old": "Start with context",
+      "new": "Know what is running"
+    },
+    {
+      "path": "content.steps[0].body",
+      "old": "Establish what is actually running: version, configuration, inputs, and environment boundaries. Documentation helps locate the path, but does not replace observation.",
+      "new": "Start with the real build, config, inputs, and environment. The docs are a map, not proof that you're on the right road."
+    },
+    {
+      "path": "content.steps[1].title",
+      "old": "Form a testable hypothesis",
+      "new": "Make the hunch testable"
+    },
+    {
+      "path": "content.steps[1].body",
+      "old": "Define which result would support or disprove an explanation. Aim for a reproduction before changing code.",
+      "new": "Say what would prove the theory wrong. Get a repro before you reach for a fix."
+    },
+    {
+      "path": "content.steps[2].title",
+      "old": "Keep experiments focused",
+      "new": "One change, one question"
+    },
+    {
+      "path": "content.steps[2].body",
+      "old": "Prefer narrow changes and controlled experiments over batches of edits that make the cause of a result difficult to identify.",
+      "new": "Keep experiments small. Change five things at once and good luck figuring out which one mattered."
+    },
+    {
+      "path": "content.steps[3].title",
+      "old": "Verify at the relevant layer",
+      "new": "Check the right thing"
+    },
+    {
+      "path": "content.steps[3].body",
+      "old": "Unit tests, integration tests, devices, and external APIs answer different questions. Success at one layer does not replace checks at the others.",
+      "new": "A unit test, a device run, and a server response answer different questions. Don't swap one for another."
+    },
+    {
+      "path": "content.steps[4].title",
+      "old": "Limit disclosure",
+      "new": "Keep private stuff private"
+    },
+    {
+      "path": "content.steps[4].body",
+      "old": "Share methods and conclusions, not private data. Work only on owned systems or with explicit authorization.",
+      "new": "Share the method and the takeaway, not private data. My own systems or explicit permission — that's the deal."
+    },
+    {
+      "path": "content.layers[0].title",
+      "old": "Local tests",
+      "new": "Tests on your machine"
+    },
+    {
+      "path": "content.layers[0].shows",
+      "old": "The implementation satisfied the assertions exercised by the selected tests.",
+      "new": "The selected checks passed for the inputs they exercised."
+    },
+    {
+      "path": "content.layers[0].misses",
+      "old": "Real devices, real networks, and server-side enforcement.",
+      "new": "What real devices, networks, or server-side access checks will do."
+    },
+    {
+      "path": "content.layers[1].title",
+      "old": "Device behavior",
+      "new": "A real device run"
+    },
+    {
+      "path": "content.layers[1].shows",
+      "old": "What the client does in the tested device or emulator environment.",
+      "new": "What the client did in that device or emulator run."
+    },
+    {
+      "path": "content.layers[1].misses",
+      "old": "Whether the server accepts, rejects, or ignores what it receives.",
+      "new": "Whether the server accepted, rejected, or ignored that output."
+    },
+    {
+      "path": "content.layers[2].title",
+      "old": "External server verification",
+      "new": "The actual server check"
+    },
+    {
+      "path": "content.layers[2].shows",
+      "old": "The observed outcome of the tested server-side verification path.",
+      "new": "What the intended server-side verification path returned in that test."
+    },
+    {
+      "path": "content.layers[2].misses",
+      "old": "Untested requests and internal causes; a response alone does not explain the mechanism.",
+      "new": "Untested requests or why it happened. A response isn't a tour of the internals."
+    },
+    {
+      "path": "content.tools[0].area",
+      "old": "Backend",
+      "new": "Backend plumbing"
+    },
+    {
+      "path": "content.tools[1].area",
+      "old": "Web",
+      "new": "Web stuff"
+    },
+    {
+      "path": "content.tools[1].items",
+      "old": "TypeScript · React · Next.js · account and administration interfaces · internationalization",
+      "new": "TypeScript · React · Next.js · account/admin UIs · i18n"
+    },
+    {
+      "path": "content.tools[2].area",
+      "old": "Mobile research",
+      "new": "Mobile deep dives"
+    },
+    {
+      "path": "content.tools[2].items",
+      "old": "Android · APK/DEX/JNI · Java · native analysis · unidbg · Frida · ADB · network traces · HAR · protobuf",
+      "new": "Android · APK/DEX/JNI · Java · native-code digging · unidbg · Frida · ADB · traffic traces · HAR · protobuf"
+    },
+    {
+      "path": "content.tools[3].area",
+      "old": "Mobile integrations",
+      "new": "Mobile glue"
+    },
+    {
+      "path": "content.tools[3].items",
+      "old": "Android/iOS SDKs · APNs/VoIP · integrity and attestation flows",
+      "new": "Android/iOS SDKs · APNs/VoIP · integrity and attestation plumbing"
+    },
+    {
+      "path": "content.tools[4].area",
+      "old": "iOS research",
+      "new": "iOS rabbit holes"
+    },
+    {
+      "path": "content.tools[4].items",
+      "old": "Secure Enclave and hardware-backed key attestation · App Attest / DeviceCheck behavior · framework and protocol analysis · Objective-C/Swift interface analysis · TLS/network observation",
+      "new": "Secure Enclave · hardware-backed key attestation · App Attest / DeviceCheck quirks · framework and protocol deep dives · Objective-C/Swift interfaces · TLS/network traces"
+    },
+    {
+      "path": "content.tools[5].area",
+      "old": "Infrastructure",
+      "new": "Infra & network bits"
+    },
+    {
+      "path": "content.tools[5].items",
+      "old": "Linux · Docker · OpenWrt · network configuration · DNS/TLS · Prometheus · Loki",
+      "new": "Linux · Docker · OpenWrt · network config · DNS/TLS · Prometheus · Loki"
+    },
+    {
+      "path": "content.tools[6].area",
+      "old": "Engineering practice",
+      "new": "How I ship"
+    },
+    {
+      "path": "content.tools[6].items",
+      "old": "Regression tests · reproducible experiments · release verification · rollback planning",
+      "new": "Regression checks · repeatable experiments · release checks · a way to roll back"
+    }
+  ],
+  "svgText": [
+    {
+      "slug": "android-integrity",
+      "diagram": "diagramCard",
+      "elements": 32,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Device and emulation lanes",
+          "new": "Real device vs. emulation"
+        },
+        {
+          "element": "desc",
+          "old": "Two parallel lanes, physical device and emulation, each run the app with JNI and produce a native trace. Both feed one server-side verifier. Where they join, the open question is whether both belong to the same execution. No verdict is shown.",
+          "new": "Two lanes: a real device and emulation. Each runs the app through JNI and produces a native trace, then feeds a server verifier. The question at the join is whether the evidence belongs to the same run. No verdict claimed."
+        },
+        {
+          "element": "text",
+          "old": "physical device",
+          "new": "real device"
+        },
+        {
+          "element": "text",
+          "old": "same execution?",
+          "new": "same run?"
+        },
+        {
+          "element": "text",
+          "old": "server-side verifier",
+          "new": "server verifier"
+        },
+        {
+          "element": "text",
+          "old": "verdict: not claimed",
+          "new": "no verdict claimed"
+        }
+      ]
+    },
+    {
+      "slug": "android-integrity",
+      "diagram": "diagramLarge",
+      "elements": 32,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Device and emulation lanes",
+          "new": "Real device vs. emulation"
+        },
+        {
+          "element": "desc",
+          "old": "Two parallel lanes, physical device and emulation, each run the app with JNI and produce a native trace. Both feed one server-side verifier. Where they join, the open question is whether both belong to the same execution. No verdict is shown.",
+          "new": "Two lanes: a real device and emulation. Each runs the app through JNI and produces a native trace, then feeds a server verifier. The question at the join is whether the evidence belongs to the same run. No verdict claimed."
+        },
+        {
+          "element": "text",
+          "old": "physical device",
+          "new": "real device"
+        },
+        {
+          "element": "text",
+          "old": "same execution?",
+          "new": "same run?"
+        },
+        {
+          "element": "text",
+          "old": "server-side verifier",
+          "new": "server verifier"
+        },
+        {
+          "element": "text",
+          "old": "verdict: not claimed",
+          "new": "no verdict claimed"
+        }
+      ]
+    },
+    {
+      "slug": "realtime-security",
+      "diagram": "diagramCard",
+      "elements": 23,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Authenticate before registering",
+          "new": "Auth first, socket slot second"
+        },
+        {
+          "element": "desc",
+          "old": "Client sends connect with credential. Server authenticates first. On failure, the client is rejected and no connection slot is held. On success, the server registers a slot and returns an accepted, session-bound connection.",
+          "new": "The client connects with a credential. The server checks auth before claiming a connection slot. Failed check? Rejected, no slot held. Passed check? Registered and tied to the session."
+        },
+        {
+          "element": "text",
+          "old": "connect + credential",
+          "new": "connect + auth"
+        },
+        {
+          "element": "text",
+          "old": "authenticate",
+          "new": "auth check"
+        },
+        {
+          "element": "text",
+          "old": "✕ rejected · no slot held",
+          "new": "✕ nope · no slot held"
+        },
+        {
+          "element": "text",
+          "old": "valid",
+          "new": "checks out"
+        },
+        {
+          "element": "text",
+          "old": "register slot",
+          "new": "claim a slot"
+        },
+        {
+          "element": "text",
+          "old": "✓ accepted · session bound",
+          "new": "✓ in · tied to session"
+        }
+      ]
+    },
+    {
+      "slug": "realtime-security",
+      "diagram": "diagramLarge",
+      "elements": 23,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Authenticate before registering",
+          "new": "Auth first, socket slot second"
+        },
+        {
+          "element": "desc",
+          "old": "Client sends connect with credential. Server authenticates first. On failure, the client is rejected and no connection slot is held. On success, the server registers a slot and returns an accepted, session-bound connection.",
+          "new": "The client connects with a credential. The server checks auth before claiming a connection slot. Failed check? Rejected, no slot held. Passed check? Registered and tied to the session."
+        },
+        {
+          "element": "text",
+          "old": "connect + credential",
+          "new": "connect + auth"
+        },
+        {
+          "element": "text",
+          "old": "authenticate",
+          "new": "auth check"
+        },
+        {
+          "element": "text",
+          "old": "✕ rejected · no slot held",
+          "new": "✕ nope · no slot held"
+        },
+        {
+          "element": "text",
+          "old": "valid",
+          "new": "checks out"
+        },
+        {
+          "element": "text",
+          "old": "register slot",
+          "new": "claim a slot"
+        },
+        {
+          "element": "text",
+          "old": "✓ accepted · session bound",
+          "new": "✓ in · tied to session"
+        }
+      ]
+    },
+    {
+      "slug": "worker-lifecycle",
+      "diagram": "diagramCard",
+      "elements": 24,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Worker shutdown states",
+          "new": "A worker that knows how to quit"
+        },
+        {
+          "element": "desc",
+          "old": "Three states: accepting, then draining after a signal, then stopped after a deadline. Draining is bounded. On shutdown, only tasks owned by this worker instance are updated.",
+          "new": "Accepting work, then draining after a signal, then stopped at the deadline. The drain is bounded. At shutdown, only tasks owned by this exact worker get updated."
+        },
+        {
+          "element": "text",
+          "old": "bounded drain",
+          "new": "drain with a deadline"
+        },
+        {
+          "element": "text",
+          "old": "on shutdown, update only tasks",
+          "new": "at shutdown, touch only tasks"
+        },
+        {
+          "element": "text",
+          "old": "owned by this worker instance",
+          "new": "owned by this exact worker"
+        }
+      ]
+    },
+    {
+      "slug": "worker-lifecycle",
+      "diagram": "diagramLarge",
+      "elements": 24,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Worker shutdown states",
+          "new": "A worker that knows how to quit"
+        },
+        {
+          "element": "desc",
+          "old": "Three states: accepting, then draining after a signal, then stopped after a deadline. Draining is bounded. On shutdown, only tasks owned by this worker instance are updated.",
+          "new": "Accepting work, then draining after a signal, then stopped at the deadline. The drain is bounded. At shutdown, only tasks owned by this exact worker get updated."
+        },
+        {
+          "element": "text",
+          "old": "bounded drain",
+          "new": "drain with a deadline"
+        },
+        {
+          "element": "text",
+          "old": "on shutdown, update only tasks",
+          "new": "at shutdown, touch only tasks"
+        },
+        {
+          "element": "text",
+          "old": "owned by this worker instance",
+          "new": "owned by this exact worker"
+        }
+      ]
+    },
+    {
+      "slug": "mobile-sdk-analysis",
+      "diagram": "diagramCard",
+      "elements": 31,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Inputs to request shapes",
+          "new": "Same-looking inputs, different traffic"
+        },
+        {
+          "element": "desc",
+          "old": "Three input combinations — version A cold launch, version A resumed, version B cold launch — each map to a different observed request shape. Note: structural similarity does not equal end-to-end compatibility.",
+          "new": "Version A from a fresh start, version A resumed, and version B from a fresh start each produce an observed request shape. Similar shapes aren't proof that the full flow is compatible."
+        },
+        {
+          "element": "text",
+          "old": "observed request",
+          "new": "what went out"
+        },
+        {
+          "element": "text",
+          "old": "v.A · cold launch",
+          "new": "v.A · fresh start"
+        },
+        {
+          "element": "text",
+          "old": "request shape 1",
+          "new": "shape 1"
+        },
+        {
+          "element": "text",
+          "old": "v.A · resumed",
+          "new": "v.A · back again"
+        },
+        {
+          "element": "text",
+          "old": "request shape 2",
+          "new": "shape 2"
+        },
+        {
+          "element": "text",
+          "old": "v.B · cold launch",
+          "new": "v.B · fresh start"
+        },
+        {
+          "element": "text",
+          "old": "request shape 3",
+          "new": "shape 3"
+        },
+        {
+          "element": "text",
+          "old": "structural similarity",
+          "new": "same-ish shape"
+        },
+        {
+          "element": "text",
+          "old": "≠ end-to-end compatibility",
+          "new": "≠ full compatibility"
+        }
+      ]
+    },
+    {
+      "slug": "mobile-sdk-analysis",
+      "diagram": "diagramLarge",
+      "elements": 31,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Inputs to request shapes",
+          "new": "Same-looking inputs, different traffic"
+        },
+        {
+          "element": "desc",
+          "old": "Three input combinations — version A cold launch, version A resumed, version B cold launch — each map to a different observed request shape. Note: structural similarity does not equal end-to-end compatibility.",
+          "new": "Version A from a fresh start, version A resumed, and version B from a fresh start each produce an observed request shape. Similar shapes aren't proof that the full flow is compatible."
+        },
+        {
+          "element": "text",
+          "old": "observed request",
+          "new": "what went out"
+        },
+        {
+          "element": "text",
+          "old": "v.A · cold launch",
+          "new": "v.A · fresh start"
+        },
+        {
+          "element": "text",
+          "old": "request shape 1",
+          "new": "shape 1"
+        },
+        {
+          "element": "text",
+          "old": "v.A · resumed",
+          "new": "v.A · back again"
+        },
+        {
+          "element": "text",
+          "old": "request shape 2",
+          "new": "shape 2"
+        },
+        {
+          "element": "text",
+          "old": "v.B · cold launch",
+          "new": "v.B · fresh start"
+        },
+        {
+          "element": "text",
+          "old": "request shape 3",
+          "new": "shape 3"
+        },
+        {
+          "element": "text",
+          "old": "structural similarity",
+          "new": "same-ish shape"
+        },
+        {
+          "element": "text",
+          "old": "≠ end-to-end compatibility",
+          "new": "≠ full compatibility"
+        }
+      ]
+    },
+    {
+      "slug": "push-integration-security",
+      "diagram": "diagramCard",
+      "elements": 30,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Asynchronous push path",
+          "new": "Queued isn't a delivery receipt"
+        },
+        {
+          "element": "desc",
+          "old": "API to queue to worker to external provider. The result path from worker back to the status and result endpoint passes an access check. Note at the provider: accepted does not mean delivered.",
+          "new": "API to queue to worker to push provider. The result path back to the status/result endpoint passes an access check. A provider accepting a push doesn't mean it arrived."
+        }
+      ]
+    },
+    {
+      "slug": "push-integration-security",
+      "diagram": "diagramLarge",
+      "elements": 30,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Asynchronous push path",
+          "new": "Queued isn't a delivery receipt"
+        },
+        {
+          "element": "desc",
+          "old": "API to queue to worker to external provider. The result path from worker back to the status and result endpoint passes an access check. Note at the provider: accepted does not mean delivered.",
+          "new": "API to queue to worker to push provider. The result path back to the status/result endpoint passes an access check. A provider accepting a push doesn't mean it arrived."
+        }
+      ]
+    },
+    {
+      "slug": "network-observability",
+      "diagram": "diagramCard",
+      "elements": 35,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Layered diagnostics",
+          "new": "Find the layer, not a scapegoat"
+        },
+        {
+          "element": "desc",
+          "old": "A stack of five layers: application, HTTP, TLS, DNS, routing. An independent control request probes each layer separately. Note: one green signal does not mean a working workflow.",
+          "new": "The app, HTTP, TLS, DNS, and routing each get their own control probe. One green check doesn't prove the user's actual workflow works."
+        },
+        {
+          "element": "text",
+          "old": "control request",
+          "new": "control probe"
+        },
+        {
+          "element": "text",
+          "old": "application",
+          "new": "the app"
+        },
+        {
+          "element": "text",
+          "old": "one green signal ≠ working workflow",
+          "new": "one green check ≠ a working app"
+        }
+      ]
+    },
+    {
+      "slug": "network-observability",
+      "diagram": "diagramLarge",
+      "elements": 35,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Layered diagnostics",
+          "new": "Find the layer, not a scapegoat"
+        },
+        {
+          "element": "desc",
+          "old": "A stack of five layers: application, HTTP, TLS, DNS, routing. An independent control request probes each layer separately. Note: one green signal does not mean a working workflow.",
+          "new": "The app, HTTP, TLS, DNS, and routing each get their own control probe. One green check doesn't prove the user's actual workflow works."
+        },
+        {
+          "element": "text",
+          "old": "control request",
+          "new": "control probe"
+        },
+        {
+          "element": "text",
+          "old": "application",
+          "new": "the app"
+        },
+        {
+          "element": "text",
+          "old": "one green signal ≠ working workflow",
+          "new": "one green check ≠ a working app"
+        }
+      ]
+    },
+    {
+      "slug": "ios-attestation",
+      "diagram": "diagramCard",
+      "elements": 25,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Attestation chain, abstract",
+          "new": "iOS attestation roles, not a magic stamp"
+        },
+        {
+          "element": "desc",
+          "old": "A conceptual separation of client assertions, hardware-backed operations, platform services, and server-side checks. This is not an exact App Attest or DeviceCheck API sequence, and no accepted verdict is claimed.",
+          "new": "Client claims, hardware-backed operations, platform services, and server checks get separate lanes. This is a conceptual sketch, not the exact App Attest or DeviceCheck API sequence. No accepted verdict is claimed."
+        },
+        {
+          "element": "text",
+          "old": "client assertion",
+          "new": "client claim"
+        },
+        {
+          "element": "text",
+          "old": "client only claims",
+          "new": "what the app says"
+        },
+        {
+          "element": "text",
+          "old": "secure enclave",
+          "new": "Secure Enclave"
+        },
+        {
+          "element": "text",
+          "old": "enclave establishes",
+          "new": "hardware's role"
+        },
+        {
+          "element": "text",
+          "old": "server-side check",
+          "new": "server check"
+        },
+        {
+          "element": "text",
+          "old": "verdict: not claimed",
+          "new": "no verdict claimed"
+        }
+      ]
+    },
+    {
+      "slug": "ios-attestation",
+      "diagram": "diagramLarge",
+      "elements": 25,
+      "geometryAttributesAndStyles": "EXACT",
+      "textEdits": [
+        {
+          "element": "title",
+          "old": "Attestation chain, abstract",
+          "new": "iOS attestation roles, not a magic stamp"
+        },
+        {
+          "element": "desc",
+          "old": "A conceptual separation of client assertions, hardware-backed operations, platform services, and server-side checks. This is not an exact App Attest or DeviceCheck API sequence, and no accepted verdict is claimed.",
+          "new": "Client claims, hardware-backed operations, platform services, and server checks get separate lanes. This is a conceptual sketch, not the exact App Attest or DeviceCheck API sequence. No accepted verdict is claimed."
+        },
+        {
+          "element": "text",
+          "old": "client assertion",
+          "new": "client claim"
+        },
+        {
+          "element": "text",
+          "old": "client only claims",
+          "new": "what the app says"
+        },
+        {
+          "element": "text",
+          "old": "secure enclave",
+          "new": "Secure Enclave"
+        },
+        {
+          "element": "text",
+          "old": "enclave establishes",
+          "new": "hardware's role"
+        },
+        {
+          "element": "text",
+          "old": "server-side check",
+          "new": "server check"
+        },
+        {
+          "element": "text",
+          "old": "verdict: not claimed",
+          "new": "no verdict claimed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # vrt — Security Research & Engineering
 
-An English-only personal portfolio, prepared for **GitHub Pages**.
+An English-only personal portfolio with conversational technical copy, prepared for **GitHub Pages**.
 
 Repository: [vrtcode/vrtcode.github.io](https://github.com/vrtcode/vrtcode.github.io).
 The intended initial Pages address is `https://vrtcode.github.io/`; repository creation does not mean that Pages has been enabled or the website deployed.
@@ -91,6 +91,7 @@ The is-a.dev terms allow AI-assisted website development but warn against AI-cre
 | `src/content.json` | Case studies, diagrams, focus areas, approach, and tool groups |
 | `src/body.html` | Hero, About, section structure, case-page structure, contact, and footer |
 | `src/header.html` | Brand and accessible primary navigation |
+| `src/social-card.html` | Editable source for the checked-in social-preview image; not a runtime page |
 | `src/base.css` | Original global visual rules |
 | `src/enhancements.css` | Local font declarations, header/menu layout, and responsive refinements |
 | `assets/site.js` | Optional menu and background behavior |

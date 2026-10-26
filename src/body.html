@@ -4,7 +4,7 @@
 <div aria-hidden="true" style="position:absolute;inset:0 0 auto 0;height:1100px;pointer-events:none;background-image:linear-gradient(rgba(41,57,74,.45) 1px,transparent 1px),linear-gradient(90deg,rgba(41,57,74,.45) 1px,transparent 1px);background-size:56px 56px;background-position:-1px -1px;-webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.5) 45%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.5) 45%,transparent 100%)"></div>
 </sc-if>
 
-<a href="#main" style="position:absolute;left:16px;top:-60px;z-index:50;padding:10px 16px;background:#66D9EF;color:#080C12;font-family:'IBM Plex Mono',monospace;font-size:14px;border-radius:8px;text-decoration:none" style-focus="top:12px">Skip to content</a>
+<a href="#main" style="position:absolute;left:16px;top:-60px;z-index:50;padding:10px 16px;background:#66D9EF;color:#080C12;font-family:'IBM Plex Mono',monospace;font-size:14px;border-radius:8px;text-decoration:none" style-focus="top:12px">Jump to the good stuff</a>
 
 {{ siteHeader }}
 
@@ -13,12 +13,12 @@
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
 <section id="top" aria-labelledby="hero-h" style="max-width:1200px;margin:0 auto;padding:clamp(56px,9vw,120px) 24px clamp(64px,8vw,112px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(40px,6vw,80px);align-items:center">
 <div style="min-width:0">
-<p style="margin:0 0 28px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.04em;color:#A8B8C8;display:flex;align-items:center;gap:10px"><span aria-hidden="true" style="width:8px;height:8px;background:#B5E07A;border-radius:1px"></span>SECURITY RESEARCH &amp; ENGINEERING</p>
-<h1 id="hero-h" style="margin:0;font-size:clamp(38px,6.2vw,82px);line-height:1.03;font-weight:600;letter-spacing:-.035em;text-wrap:balance">Understand how the system <span style="color:#66D9EF">actually works.</span></h1>
-<p style="margin:32px 0 0;max-width:34em;font-size:18px;line-height:1.65;color:#A8B8C8;text-wrap:pretty">I'm vrt. I work across mobile security, reverse engineering, and backend development. I investigate application behavior, trace complex failures, and test solutions through reproducible experiments.</p>
-<p style="margin:16px 0 0;max-width:34em;font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.6;color:#EDF3F8">From native code and network protocols to task queues and safe releases.</p>
+<p style="margin:0 0 28px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.04em;color:#A8B8C8;display:flex;align-items:center;gap:10px"><span aria-hidden="true" style="width:8px;height:8px;background:#B5E07A;border-radius:1px"></span>CODE. TRACES. NO GUESSWORK.</p>
+<h1 id="hero-h" style="margin:0;font-size:clamp(38px,6.2vw,82px);line-height:1.03;font-weight:600;letter-spacing:-.035em;text-wrap:balance">Figure out what's <span style="color:#66D9EF">really going on.</span></h1>
+<p style="margin:32px 0 0;max-width:34em;font-size:18px;line-height:1.65;color:#A8B8C8;text-wrap:pretty">I'm vrt. I dig into mobile apps, native code, and backends to figure out what's actually happening. Weird behavior? I follow the traces, test the hunch, and keep the receipts.</p>
+<p style="margin:16px 0 0;max-width:34em;font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.6;color:#EDF3F8">Under the hood, across the wire, and all the way to a fix you can check.</p>
 <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px">
-<a href="#work" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;background:#66D9EF;color:#080C12;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;transition:background .18s" style-hover="background:#EDF3F8;color:#080C12">Explore the work <span aria-hidden="true">→</span></a>
+<a href="#work" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;background:#66D9EF;color:#080C12;border-radius:8px;font-weight:600;font-size:16px;text-decoration:none;transition:background .18s" style-hover="background:#EDF3F8;color:#080C12">See what I dig into <span aria-hidden="true">→</span></a>
 <a href="https://github.com/vrtcode" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border:1px solid #29394A;color:#EDF3F8;border-radius:8px;font-weight:500;font-size:16px;text-decoration:none;transition:border-color .18s,background .18s" style-hover="border-color:#66D9EF;background:#111923;color:#EDF3F8">GitHub <span aria-hidden="true" style="font-family:'IBM Plex Mono',monospace;color:#66D9EF">↗</span></a>
 </div>
 </div>
@@ -26,7 +26,7 @@
 <figure aria-labelledby="fig1-cap" style="margin:0;position:relative;min-width:0;background:rgba(17,25,35,.82);border:1px solid #29394A;border-radius:12px;padding:24px 24px 12px">
 <span aria-hidden="true" style="position:absolute;top:-6px;left:-6px;width:12px;height:12px;border-top:1px solid #66D9EF;border-left:1px solid #66D9EF"></span>
 <span aria-hidden="true" style="position:absolute;bottom:-6px;right:-6px;width:12px;height:12px;border-bottom:1px solid #66D9EF;border-right:1px solid #66D9EF"></span>
-<figcaption id="fig1-cap" style="display:flex;justify-content:space-between;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;padding-bottom:16px;border-bottom:1px solid #29394A;letter-spacing:.03em"><span>fig. 1 — research flow</span><span aria-hidden="true">5 stages</span></figcaption>
+<figcaption id="fig1-cap" style="display:flex;justify-content:space-between;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;padding-bottom:16px;border-bottom:1px solid #29394A;letter-spacing:.03em"><span>fig. 1 — the game plan</span><span aria-hidden="true">5 moves</span></figcaption>
 <ol style="list-style:none;margin:0;padding:0">
 <sc-for list="{{ flow }}" as="f" hint-placeholder-count="5">
 <li style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:stretch">
@@ -42,27 +42,27 @@
 </li>
 </sc-for>
 </ol>
-<p style="margin:0;padding:14px 0 6px;border-top:1px solid #29394A;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#EDF3F8">Observe → hypothesize → experiment → verify.</p>
+<p style="margin:0;padding:14px 0 6px;border-top:1px solid #29394A;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#EDF3F8">Look → question → test → check.</p>
 </figure>
 </section>
 
 <section id="about" aria-labelledby="about-h" style="border-top:1px solid #29394A">
 <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px 64px">
 <div>
-<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">01 / About</p>
-<h2 id="about-h" style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em;text-wrap:balance">Where code, documentation, and behavior disagree.</h2>
+<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">01 / About me</p>
+<h2 id="about-h" style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em;text-wrap:balance">The docs say one thing. The code says, 'nah.'</h2>
 </div>
 <div style="grid-column:span 2;min-width:min(100%,300px);max-width:68ch;display:flex;flex-direction:column;gap:20px;font-size:18px;line-height:1.7;color:#EDF3F8;text-wrap:pretty">
-<p style="margin:0">I'm interested in systems where the code, documentation, and observed behavior don't quite agree. My work spans Android and iOS integrations, native code analysis, network protocols, and server-side logic. I connect research with engineering: investigate the cause, test a hypothesis, and turn the finding into a reproducible check or a focused change.</p>
-<p style="margin:0;color:#A8B8C8">Reliability is another part of that work: worker lifecycles, task queues, access control, observability, and safe updates. A successful build, a passing local test, and verified behavior in an external environment are different kinds of evidence. I aim to make clear what has been established and what remains a hypothesis.</p>
+<p style="margin:0">That's the stuff I like digging into: Android and iOS integrations, native code, network protocols, and backend logic that doesn't quite match the story. I chase the cause, put the theory on trial, and turn what holds up into a repeatable check or a focused fix.</p>
+<p style="margin:0;color:#A8B8C8">I also work on the less flashy bits that keep systems from falling over: queues, worker shutdowns, access checks, logs, and safe rollouts. A green build isn't a victory lap. Neither is one passing test. I keep 'we checked this' separate from 'that's our best guess.'</p>
 </div>
 </div>
 </section>
 
 <section id="focus" aria-labelledby="focus-h" style="border-top:1px solid #29394A">
 <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 24px">
-<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">02 / Focus</p>
-<h2 id="focus-h" style="margin:0 0 48px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">Four areas of practical work</h2>
+<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">02 / My lanes</p>
+<h2 id="focus-h" style="margin:0 0 48px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">Where I get my hands dirty</h2>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:#29394A;border:1px solid #29394A;border-radius:12px;overflow:hidden">
 <sc-for list="{{ focus }}" as="a" hint-placeholder-count="4">
 <article style="background:#080C12;padding:28px 24px 32px;display:flex;flex-direction:column;gap:14px">
@@ -79,10 +79,10 @@
 <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 24px">
 <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px;margin-bottom:48px">
 <div>
-<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">03 / Work</p>
-<h2 id="work-h" style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">Selected case studies</h2>
+<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">03 / The work</p>
+<h2 id="work-h" style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">A few trips down the rabbit hole</h2>
 </div>
-<p style="margin:0;max-width:44ch;font-size:15px;color:#A8B8C8;text-wrap:pretty">Anonymized write-ups of past work. Source code for these projects is private; identifiers and infrastructure details have been removed.</p>
+<p style="margin:0;max-width:44ch;font-size:15px;color:#A8B8C8;text-wrap:pretty">Real work, with the private bits stripped out. The code stays private; names, identifiers, and infrastructure details don't make the cut.</p>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:20px">
 <sc-for list="{{ cases }}" as="c" hint-placeholder-count="6">
@@ -102,7 +102,7 @@
 <li style="padding:3px 9px;border-radius:999px;background:#192433;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">{{ t }}</li>
 </sc-for>
 </ul>
-<a href="{{ c.href }}" aria-label="{{ c.linkLabel }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;text-decoration:none" style-hover="color:#EDF3F8">Read case <span aria-hidden="true">→</span></a>
+<a href="{{ c.href }}" aria-label="{{ c.linkLabel }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;text-decoration:none" style-hover="color:#EDF3F8">Dig into it <span aria-hidden="true">→</span></a>
 </div>
 </article>
 </sc-for>
@@ -112,9 +112,9 @@
 
 <section id="approach" aria-labelledby="approach-h" style="border-top:1px solid #29394A">
 <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 24px">
-<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">04 / Approach</p>
-<h2 id="approach-h" style="margin:0 0 16px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">Evidence over confidence.</h2>
-<p style="margin:0 0 48px;max-width:60ch;font-size:17px;color:#A8B8C8;text-wrap:pretty">Five working rules, applied to research and engineering alike.</p>
+<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">04 / My playbook</p>
+<h2 id="approach-h" style="margin:0 0 16px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">No hype. Just receipts.</h2>
+<p style="margin:0 0 48px;max-width:60ch;font-size:17px;color:#A8B8C8;text-wrap:pretty">Five rules I stick to, whether I'm poking at a binary or fixing a backend.</p>
 <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:20px">
 <sc-for list="{{ steps }}" as="s" hint-placeholder-count="5">
 <li style="display:flex;flex-direction:column;gap:10px;padding-top:18px;border-top:2px solid {{ s.bar }}">
@@ -126,13 +126,13 @@
 </ol>
 
 <div style="margin-top:64px;border:1px solid #29394A;border-radius:12px;overflow:hidden">
-<div style="padding:16px 24px;border-bottom:1px solid #29394A;background:#111923;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#EDF3F8">Verification layers — what each one can and cannot prove</div>
+<div style="padding:16px 24px;border-bottom:1px solid #29394A;background:#111923;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#EDF3F8">What each check buys you — and what it doesn't</div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:#29394A">
 <sc-for list="{{ layers }}" as="l" hint-placeholder-count="3">
 <div style="background:#080C12;padding:24px;display:flex;flex-direction:column;gap:12px">
 <h3 style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;color:#66D9EF">{{ l.title }}</h3>
-<p style="margin:0;font-size:15px;line-height:1.55;color:#EDF3F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B5E07A;margin-right:6px">shows</span>{{ l.shows }}</p>
-<p style="margin:0;font-size:15px;line-height:1.55;color:#A8B8C8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-right:6px">misses</span>{{ l.misses }}</p>
+<p style="margin:0;font-size:15px;line-height:1.55;color:#EDF3F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#B5E07A;margin-right:6px">backs up</span>{{ l.shows }}</p>
+<p style="margin:0;font-size:15px;line-height:1.55;color:#A8B8C8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-right:6px">can't tell you</span>{{ l.misses }}</p>
 </div>
 </sc-for>
 </div>
@@ -143,9 +143,9 @@
 <section id="tools" aria-labelledby="tools-h" style="border-top:1px solid #29394A">
 <div style="max-width:1200px;margin:0 auto;padding:clamp(64px,8vw,104px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px 64px">
 <div>
-<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">05 / Tools</p>
-<h2 id="tools-h" style="margin:0 0 16px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">Project tools and technologies</h2>
-<p style="margin:0;font-size:15px;color:#A8B8C8;max-width:40ch;text-wrap:pretty">Tools used across research and engineering projects.</p>
+<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">05 / The gear</p>
+<h2 id="tools-h" style="margin:0 0 16px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em">The stack behind the digging</h2>
+<p style="margin:0;font-size:15px;color:#A8B8C8;max-width:40ch;text-wrap:pretty">Tools I've used on the job. Not a wall of skill bars.</p>
 </div>
 <dl style="grid-column:span 2;min-width:min(100%,300px);margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:28px 32px">
 <sc-for list="{{ tools }}" as="g" hint-placeholder-count="4">
@@ -163,9 +163,9 @@
 <div style="position:relative;padding:clamp(32px,5vw,56px);border:1px solid #29394A;border-radius:12px;background:#111923;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:32px;align-items:end">
 <span aria-hidden="true" style="position:absolute;top:-6px;left:-6px;width:12px;height:12px;border-top:1px solid #66D9EF;border-left:1px solid #66D9EF"></span>
 <div>
-<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">06 / Contact</p>
-<h2 id="contact-h" style="margin:0 0 16px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em;text-wrap:balance">Let's discuss how it works.</h2>
-<p style="margin:0;max-width:50ch;font-size:17px;color:#A8B8C8;text-wrap:pretty">Interested in mobile security, reverse engineering, and reliable systems? You can find my public profile on GitHub or reach me on Telegram.</p>
+<p style="margin:0 0 12px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;letter-spacing:.04em">06 / Say hey</p>
+<h2 id="contact-h" style="margin:0 0 16px;font-size:clamp(28px,3.4vw,40px);line-height:1.15;font-weight:600;letter-spacing:-.02em;text-wrap:balance">Got something weird under the hood?</h2>
+<p style="margin:0;max-width:50ch;font-size:17px;color:#A8B8C8;text-wrap:pretty">Into mobile security, reverse engineering, or systems that don't fall over? Check out my GitHub or drop me a line on Telegram.</p>
 </div>
 <div style="display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px">
 <a href="https://t.me/vrt_acc" target="_blank" rel="noopener noreferrer" style="order:2;display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 24px;border:1px solid #29394A;color:#EDF3F8;border-radius:8px;font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;text-decoration:none;transition:border-color .18s,background .18s" style-hover="border-color:#66D9EF;background:#192433;color:#EDF3F8">Telegram / vrt_acc <span aria-hidden="true" style="color:#66D9EF">↗</span></a>
@@ -180,7 +180,7 @@
 <article aria-labelledby="case-h" style="max-width:1200px;margin:0 auto;padding:clamp(40px,6vw,72px) 24px clamp(72px,8vw,112px)">
 <nav aria-label="Breadcrumb" style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A8B8C8;margin-bottom:40px">
 <ol style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
-<li><a href="#work" style="color:#A8B8C8" style-hover="color:#66D9EF">Work</a></li>
+<li><a href="#work" style="color:#A8B8C8" style-hover="color:#66D9EF">The work</a></li>
 <li aria-hidden="true">/</li>
 <li aria-current="page" style="color:#EDF3F8">{{ cs.slug }}</li>
 </ol>
@@ -193,32 +193,32 @@
 </header>
 
 <aside aria-label="Case details" style="grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:#29394A;border:1px solid #29394A;border-radius:12px;overflow:hidden">
-<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">Topics</div><div style="font-size:15px">{{ cs.topicsText }}</div></div>
-<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">Source</div><div style="font-size:15px">{{ cs.source }}; no public code or report</div></div>
-<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">Environment</div><div style="font-size:15px">Owned or explicitly authorized</div></div>
+<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">What's involved</div><div style="font-size:15px">{{ cs.topicsText }}</div></div>
+<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">Behind the scenes</div><div style="font-size:15px">{{ cs.source }}; code and raw reports stay private</div></div>
+<div style="background:#111923;padding:18px 20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8;margin-bottom:6px">The sandbox</div><div style="font-size:15px">My own systems, or explicit permission</div></div>
 </aside>
 
 <figure aria-labelledby="case-fig" style="grid-column:1/-1;margin:0;padding:24px;border:1px solid #29394A;border-radius:12px;background:#0C121A">
 <div style="display:flex;justify-content:center">{{ cs.diagramLarge }}</div>
-<figcaption id="case-fig" style="margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">fig. — simplified flow; hosts, endpoints, and identifiers removed</figcaption>
+<figcaption id="case-fig" style="margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">fig. — the short version; hosts, endpoints, and IDs left out</figcaption>
 </figure>
 
 <div style="grid-column:1/-1;max-width:72ch;display:flex;flex-direction:column;gap:48px;font-size:18px;line-height:1.7">
 <section aria-labelledby="ctx-h">
-<h2 id="ctx-h" style="margin:0 0 14px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">01</span>Context</h2>
+<h2 id="ctx-h" style="margin:0 0 14px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">01</span>The setup</h2>
 <p style="margin:0;text-wrap:pretty">{{ cs.context }}</p>
 </section>
 <section aria-labelledby="app-h">
-<h2 id="app-h" style="margin:0 0 14px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">02</span>Approach</h2>
+<h2 id="app-h" style="margin:0 0 14px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">02</span>The game plan</h2>
 <p style="margin:0;text-wrap:pretty">{{ cs.approach }}</p>
 </section>
 <section aria-labelledby="foc-h">
-<h2 id="foc-h" style="margin:0 0 14px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">03</span>Engineering focus</h2>
+<h2 id="foc-h" style="margin:0 0 14px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">03</span>What mattered</h2>
 <p style="margin:0;text-wrap:pretty">{{ cs.focus }}</p>
 </section>
 <section aria-labelledby="ev-h">
-<h2 id="ev-h" style="margin:0 0 8px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">04</span>Evidence</h2>
-<p style="margin:0 0 20px;font-size:16px;color:#A8B8C8">Implementation notes, engineering principles, and open questions.</p>
+<h2 id="ev-h" style="margin:0 0 8px;font-size:24px;font-weight:600;letter-spacing:-.01em;display:flex;gap:14px;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#66D9EF;font-weight:400">04</span>Show the receipts</h2>
+<p style="margin:0 0 20px;font-size:16px;color:#A8B8C8">What's in the code, what's a rule of thumb, and what's still an open question.</p>
 <ul style="margin:0;padding:0;list-style:none;border-top:1px solid #29394A">
 <sc-for list="{{ cs.evidenceList }}" as="ev" hint-placeholder-count="3">
 <li style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:16px 0;border-bottom:1px solid #29394A;align-items:baseline">
@@ -229,15 +229,15 @@
 </ul>
 </section>
 <section aria-labelledby="dis-h" style="padding:24px;border:1px solid #29394A;border-radius:12px;background:#111923">
-<h2 id="dis-h" style="margin:0 0 10px;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:#EDF3F8;letter-spacing:.02em">Disclosure boundary</h2>
+<h2 id="dis-h" style="margin:0 0 10px;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:#EDF3F8;letter-spacing:.02em">What stays private</h2>
 <p style="margin:0;font-size:16px;line-height:1.65;color:#A8B8C8;text-wrap:pretty">{{ cs.disclosureNote }}</p>
 </section>
 </div>
 </div>
 
 <nav aria-label="More case studies" style="margin-top:72px;padding-top:28px;border-top:1px solid #29394A;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px">
-<a href="{{ prev.href }}" style="display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #29394A;border-radius:10px;text-decoration:none;color:#EDF3F8;transition:border-color .18s" style-hover="border-color:#66D9EF;color:#EDF3F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">← previous · case {{ prev.num }}</span><span style="font-size:16px;font-weight:500">{{ prev.title }}</span></a>
-<a href="{{ next.href }}" style="display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #29394A;border-radius:10px;text-decoration:none;color:#EDF3F8;text-align:right;transition:border-color .18s" style-hover="border-color:#66D9EF;color:#EDF3F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">next · case {{ next.num }} →</span><span style="font-size:16px;font-weight:500">{{ next.title }}</span></a>
+<a href="{{ prev.href }}" style="display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #29394A;border-radius:10px;text-decoration:none;color:#EDF3F8;transition:border-color .18s" style-hover="border-color:#66D9EF;color:#EDF3F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">← back one · case {{ prev.num }}</span><span style="font-size:16px;font-weight:500">{{ prev.title }}</span></a>
+<a href="{{ next.href }}" style="display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #29394A;border-radius:10px;text-decoration:none;color:#EDF3F8;text-align:right;transition:border-color .18s" style-hover="border-color:#66D9EF;color:#EDF3F8"><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#A8B8C8">up next · case {{ next.num }} →</span><span style="font-size:16px;font-weight:500">{{ next.title }}</span></a>
 </nav>
 </article>
 </sc-if>
@@ -245,10 +245,10 @@
 <sc-if value="{{ is404 }}" hint-placeholder-val="{{ false }}">
 <section aria-labelledby="nf-h" style="max-width:1200px;margin:0 auto;padding:clamp(72px,10vw,140px) 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:48px 72px">
 <div>
-<p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#B5E07A;letter-spacing:.04em">404 · not found</p>
-<h1 id="nf-h" style="margin:0;font-size:clamp(36px,5vw,64px);line-height:1.06;font-weight:600;letter-spacing:-.03em;text-wrap:balance">No page at this address.</h1>
-<p style="margin:24px 0 0;max-width:44ch;font-size:18px;color:#A8B8C8;text-wrap:pretty">The link may be outdated or mistyped. Every case study is listed here.</p>
-<a href="#top" onClick="{{ goTop }}" style="display:inline-flex;align-items:center;gap:10px;margin-top:32px;min-height:48px;padding:0 22px;background:#66D9EF;color:#080C12;border-radius:8px;font-weight:600;text-decoration:none" style-hover="background:#EDF3F8;color:#080C12">Go to the home page</a>
+<p style="margin:0 0 20px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#B5E07A;letter-spacing:.04em">404 · wrong turn</p>
+<h1 id="nf-h" style="margin:0;font-size:clamp(36px,5vw,64px);line-height:1.06;font-weight:600;letter-spacing:-.03em;text-wrap:balance">Looks like a dead end.</h1>
+<p style="margin:24px 0 0;max-width:44ch;font-size:18px;color:#A8B8C8;text-wrap:pretty">That link took a wrong turn. The work's still here — pick a case below.</p>
+<a href="#top" onClick="{{ goTop }}" style="display:inline-flex;align-items:center;gap:10px;margin-top:32px;min-height:48px;padding:0 22px;background:#66D9EF;color:#080C12;border-radius:8px;font-weight:600;text-decoration:none" style-hover="background:#EDF3F8;color:#080C12">Back to home base</a>
 </div>
 <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #29394A">
 <sc-for list="{{ cases }}" as="c" hint-placeholder-count="6">
@@ -261,8 +261,8 @@
 
 <footer style="position:relative;z-index:1;border-top:1px solid #29394A">
 <div style="max-width:1200px;margin:0 auto;padding:32px 24px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;font-size:14px;color:#A8B8C8">
-<p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#EDF3F8">vrt · personal research &amp; engineering</p>
-<p style="margin:0;max-width:62ch;text-wrap:pretty">This website covers software development and authorized research. Confidential data and operational details of private projects are not published.</p>
+<p style="margin:0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#EDF3F8">vrt · code, traces &amp; rabbit holes</p>
+<p style="margin:0;max-width:62ch;text-wrap:pretty">I build things and research systems I own or have permission to test. Private data, secrets, and operational details stay off this site.</p>
 </div>
 </footer>
 </div>

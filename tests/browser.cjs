@@ -43,12 +43,13 @@ let browser;
         h1:[...document.querySelectorAll('h1')].map(e=>e.textContent),
         unresolved:document.body.innerText.includes('{{'),
         svg:[...document.querySelectorAll('svg')].every(s=>s.viewBox.baseVal.width===300),
-        font:document.fonts.check('16px "IBM Plex Sans"')
+        font:document.fonts.check('16px "IBM Plex Sans"'),
+        caseNames:[...document.querySelectorAll('#work a[aria-label]')].every(a=>a.getAttribute('aria-label').includes([...a.childNodes].filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join('').trim()))
       }));
       assert.equal(state.lang,'en');assert.equal(state.scroll,state.width,`${route} overflows at ${width}`);
-      assert.equal(state.h1.length,1);assert.equal(state.unresolved,false);assert.equal(state.svg,true);assert.equal(state.font,true);
+      assert.equal(state.h1.length,1);assert.equal(state.unresolved,false);assert.equal(state.svg,true);assert.equal(state.font,true);assert.equal(state.caseNames,true,'Visible case-link words must be included in their accessible name');
       if(route==='/'){
-        assert.match(state.h1[0],/Understand how/);
+        assert.match(state.h1[0],/Figure out what's/);
         if(width===390&&javascript){
           const menu=page.locator('.menu-button'),nav=page.locator('#primary-nav');
           assert.equal(await menu.isVisible(),true);assert.equal(await nav.isVisible(),false);
